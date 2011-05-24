@@ -1,4 +1,4 @@
-﻿=== Twitter ===
+﻿=== Twitter Plugin ===
 Contributors: bestwebsoft
 Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/
