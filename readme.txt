@@ -57,9 +57,7 @@ Twitter plugin allows you to add follow button in the most easiest and flexible 
 == Changelog ==
 
 = 1.03 =
-*Possibility to use shortcode for display of Twitter 'Follow me' sign at any part of content was added.
-*Now it is possible to add 'Follow me' sign to any part of a website and not only to news.
-*Also if a user likes an article they can share header of this article and its link in their twitter by clicking Twitter icon.
+*Possibility to use shortcode for display of Twitter 'Follow me' sign at any part of content was added. Now it is possible to add 'Follow me' sign to any part of a website and not only to news. Also if a user likes an article they can share title of this article and its link in their twitter by clicking Twitter icon.
 
 = 1.02 =
 *Fixed bugs with display twitter icon.
