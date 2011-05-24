@@ -4,7 +4,7 @@ Plugin Name: Twitter Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 1.01
+Version: 1.02
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -97,24 +97,16 @@ if (!function_exists ( 'twitter_form' ) ) {
 if(!function_exists( 'twitter_twit' ) ) {
 	function twitter_twit( $content ) {
 		$position = get_option( 'position' );
-		if ( $position ){?>  
-			<div style="clear:both;margin-bottom:5px;">
-				<a href='http://twitter.com/<?php echo get_option("url_twitter");?>' target="_blank">
-					<img src="<?php echo get_option('home'); ?>/wp-content/plugins/twitter/images/twitt.png" alt="Twitt" />
+		$str = '<div style="clear:both;margin-bottom:5px;">
+				<a href="http://twitter.com/'.get_option("url_twitter").'" target="_blank">
+					<img src="'.get_option('home').'/wp-content/plugins/twitter-plugin/images/twitt.png" alt="Twitt" />
 				</a>
-			</div>
-		<?php 
-		echo $content;
+			</div>';
+		if ( $position ){
+			return $str.$content;
 		}
 		else{
-
-		echo $content; ?>
-		<div style="clear:both;margin-top:5px;">
-			<a href='http://twitter.com/<?php echo get_option( "url_twitter" );?>' target="_blank">
-				<img src="<?php echo WP_PLUGIN_DIR; ?>/twitter-plugin/images/twitt.png" alt="Twitt" />
-			</a>
-		</div>
-	   <?php 
+			return $content.$str;
 		}
 	}
 }

@@ -54,6 +54,9 @@ Twitter plugin allows you to add follow button in the most easiest and flexible 
 
 == Changelog ==
 
+= 1.02 =
+*Fixed bugs with display twitter icon.
+
 = 1.01 =
 *Fixed bugs with twitter icon.
 
@@ -61,6 +64,9 @@ Twitter plugin allows you to add follow button in the most easiest and flexible 
 *Ability to install Twitter icon wth link to the account page, including settings adjustment functionality via WordPress admin panel.
 
 == Upgrade Notice ==
+
+= 1.02 =
+Upgrade immediately.
 
 = 1.01 =
 Upgrade immediately.
