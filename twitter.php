@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Twitter
+Plugin Name: Twitter Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
