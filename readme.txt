@@ -5,7 +5,7 @@ Donate link: http://bestwebsoft.com/
 Tags: twitter, text
 Requires at least: 3.1
 Tested up to: 3.1.2
-Stable tag: 2011.05.24
+Stable tag: 2011.05.25
 
 Add Twitter follow button to your WordPress website.
 
@@ -51,16 +51,33 @@ Twitter plugin allows you to add follow button in the most easiest and flexible 
 2. Settings result to display Twitter icon after your content.
 3. Settings with which Twitter icon located before your content.
 4. Settings result to display Twitter icon before your content.
+5. Shortcode display at the page.
+6. Settings shortcode.
 
 == Changelog ==
+
+= 1.03 =
+*Possibility to use shortcode for display of Twitter 'Follow me' sign at any part of content was added.
+*Now it is possible to add 'Follow me' sign to any part of a website and not only to news.
+*Also if a user likes an article they can share header of this article and its link in their twitter by clicking Twitter icon.
+
+= 1.02 =
+*Fixed bugs with display twitter icon.
 
 = 1.01 =
 *Fixed bugs with twitter icon.
 
 = 1.00 =
-*Ability to install Twitter icon wth link to the account page, including settings adjustment functionality via WordPress admin panel.
+*Ability to install Twitter icon with link to the account page, including settings adjustment functionality via WordPress admin panel.
 
 == Upgrade Notice ==
+
+= 1.03 =
+A lot of new facilities were added.
+Upgrade immediately.
+
+= 1.02 =
+Upgrade immediately.
 
 = 1.01 =
 Upgrade immediately.
