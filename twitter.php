@@ -99,7 +99,7 @@ if (!function_exists('follow_me')){
 	function follow_me() {
 		return '<a href="http://twitter.com/'.get_option("url_twitter").'" target="_blank" title="Follow me">
 				 <img src="'.get_option('home').'/wp-content/plugins/twitter-plugin/images/twitter-follow.gif" alt="Follow me" />
-			  </a>'.$content;
+			  </a>';
 	}
 }
 
