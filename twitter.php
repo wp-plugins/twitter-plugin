@@ -100,7 +100,7 @@ if(!function_exists( 'twitter_twit' ) ) {
 		if ( $position ){?>  
 			<div style="clear:both;margin-bottom:5px;">
 				<a href='http://twitter.com/<?php echo get_option("url_twitter");?>' target="_blank">
-					<img src="<?php echo get_option('home'); ?>/wp-content/plugins/twitter/images/twitt.png" alt="Twitt" />
+					<img src="<?php echo WP_PLUGIN_DIR; ?>/twitter-plugin/images/twitt.png" alt="Twitt" />
 				</a>
 			</div>
 		<?php 
@@ -111,7 +111,7 @@ if(!function_exists( 'twitter_twit' ) ) {
 		echo $content; ?>
 		<div style="clear:both;margin-top:5px;">
 			<a href='http://twitter.com/<?php echo get_option( "url_twitter" );?>' target="_blank">
-				<img src="<?php echo get_option( 'home' ); ?>/wp-content/plugins/twitter/images/twitt.png" alt="Twitt" />
+				<img src="<?php echo WP_PLUGIN_DIR; ?>/twitter-plugin/images/twitt.png" alt="Twitt" />
 			</a>
 		</div>
 	   <?php 

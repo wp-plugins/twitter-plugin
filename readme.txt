@@ -5,7 +5,7 @@ Donate link: http://bestwebsoft.com/
 Tags: twitter, text
 Requires at least: 3.1
 Tested up to: 3.1.2
-Stable tag: 2011.05.23
+Stable tag: 2011.05.24
 
 Add Twitter follow button to your WordPress website.
 
@@ -54,10 +54,16 @@ Twitter plugin allows you to add follow button in the most easiest and flexible 
 
 == Changelog ==
 
+= 1.01 =
+*Fixed bugs with twitter icon.
+
 = 1.00 =
 *Ability to install Twitter icon wth link to the account page, including settings adjustment functionality via WordPress admin panel.
 
 == Upgrade Notice ==
+
+= 1.01 =
+Upgrade immediately.
 
 = 1.00 =
 Upgrade immediately.
