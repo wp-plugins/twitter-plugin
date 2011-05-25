@@ -57,7 +57,7 @@ Twitter plugin allows you to add follow button in the most easiest and flexible 
 == Changelog ==
 
 = 1.04 =
-*Fixed bugs with display Follow Us button wuth shortcode.
+*Fixed bugs with display Follow Us button with shortcode.
 
 = 1.03 =
 *Possibility to use shortcode for display of Twitter 'Follow me' sign at any part of content was added. Now it is possible to add 'Follow me' sign to any part of a website and not only to news. Also if a user likes an article they can share title of this article and its link in their twitter by clicking Twitter icon.
@@ -74,7 +74,7 @@ Twitter plugin allows you to add follow button in the most easiest and flexible 
 == Upgrade Notice ==
 
 = 1.04 =
-Fixed bugs with display Follow Us button wuth shortcode. Upgrade immediately.
+Fixed bugs with display Follow Us button with shortcode. Upgrade immediately.
 
 = 1.03 =
 A lot of new facilities were added. Upgrade immediately.
