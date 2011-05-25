@@ -4,7 +4,7 @@ Plugin Name: Twitter Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 1.03
+Version: 1.04
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -27,12 +27,6 @@ License: GPLv2 or later
 */
 
 //add settings links
-add_filter( 'plugin_row_meta', 'twitter_settings', 10, 2 );
-add_filter( "the_content", "twitter_twit" );
-
-add_action ( 'admin_menu', 'twitter_mt_add_pages' );
-
-add_shortcode( 'follow_me', 'follow_me' );
 
 if( !function_exists( twitter_settings ) ) {
 	function twitter_settings( $links, $file ) {
@@ -126,4 +120,12 @@ if(!function_exists( 'twitter_twit' ) ) {
 	}
 }
 //Positioning in the page.End.
+
+add_filter( 'plugin_row_meta', 'twitter_settings', 10, 2 );
+add_filter( "the_content", "twitter_twit" );
+
+add_action ( 'admin_menu', 'twitter_mt_add_pages' );
+
+add_shortcode( 'follow_me', 'follow_me' );
+
 ?>
