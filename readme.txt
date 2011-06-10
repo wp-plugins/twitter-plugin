@@ -2,7 +2,7 @@
 Contributors: bestwebsoft
 Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/
-Tags: twitter, text
+Tags: twitter, text, tweet, tweet me, follow us, follow me, twitter share, twitter share button, tweet me button, follow us button, follow me, button, twitter button, tweet button, tweeter
 Requires at least: 3.1
 Tested up to: 3.1.2
 Stable tag: 2011.05.26
