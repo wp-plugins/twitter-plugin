@@ -2,10 +2,10 @@
 Contributors: bestwebsoft
 Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/
-Tags: twitter, text, tweet, tweet me, follow us, follow me, twitter share, twitter share button, tweet me button, follow us button, follow me, button, twitter button, tweet button, tweeter
+Tags: twitter, text
 Requires at least: 3.1
 Tested up to: 3.1.2
-Stable tag: 2011.05.26
+Stable tag: 2011.2.01
 
 Add Twitter follow button to your WordPress website.
 
@@ -56,6 +56,9 @@ Twitter plugin allows you to add follow button in the most easiest and flexible 
 
 == Changelog ==
 
+= 2.01 =
+*Usability at the settings page of plugin was improved.
+
 = 1.04 =
 *Fixed bugs with display 'Follow me' button with shortcode.
 
@@ -72,6 +75,9 @@ Twitter plugin allows you to add follow button in the most easiest and flexible 
 *Ability to install Twitter icon with link to the account page, including settings adjustment functionality via WordPress admin panel.
 
 == Upgrade Notice ==
+
+= 2.01 =
+Usability at the settings page of plugin was improved.
 
 = 1.04 =
 Fixed bugs with display Follow Us button with shortcode. Upgrade immediately.
