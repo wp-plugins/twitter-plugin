@@ -4,7 +4,7 @@ Plugin Name: Twitter Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.01
+Version: 2.02
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -94,7 +94,7 @@ if(!function_exists ( 'twttr_add_pages' ) ) {
 	function twttr_add_pages() {
 		//add_options_page ( 'Twitter', 'Twitter', 8, 'twitter', 'twitter_form' );
 		add_menu_page(__('BWS Plugins'), __('BWS Plugins'), 'edit_themes', 'my_new_menu', 'bws_add_menu_render', " ", 90); 
-		add_submenu_page('my_new_menu', 'Twitter Options', 'Twitter', 'edit_themes', __FILE__, 'twttr_settings_page');
+		add_submenu_page('my_new_menu', 'Twitter Options', 'Twitter', 'edit_themes', "twitter.php", 'twttr_settings_page');
 
 		//call register settings function
 		add_action( 'admin_init', 'twttr_settings' );
@@ -120,7 +120,7 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 			<div class="icon32 icon32-bws" id="icon-options-general"></div>
 			<h2>Twitter option</h2>
 			<div>
-				<form method='post' action=" admin.php?page=twitter-plugin/twitter.php">
+				<form method='post' action=" admin.php?page=twitter.php">
 					<table class="form-table">
 						<tr valign="top">
 							<th scope="row" colspan="2">Settings for the button "Follow Me":</th>
@@ -203,7 +203,7 @@ function twttr_action_links( $links, $file ) {
 	if ( ! $this_plugin ) $this_plugin = plugin_basename(__FILE__);
 
 	if ( $file == $this_plugin ){
-			 $settings_link = '<a href="admin.php?page=twitter-plugin/twitter.php">' . __('Settings', 'twitter-plugin') . '</a>';
+			 $settings_link = '<a href="admin.php?page=twitter.php">' . __('Settings', 'twitter-plugin') . '</a>';
 			 array_unshift( $links, $settings_link );
 		}
 	return $links;
@@ -212,7 +212,7 @@ function twttr_action_links( $links, $file ) {
 function twttr_links($links, $file) {
 	$base = plugin_basename(__FILE__);
 	if ($file == $base) {
-		$links[] = '<a href="admin.php?page=twitter-plugin/twitter.php">' . __('Settings','twitter-plugin') . '</a>';
+		$links[] = '<a href="admin.php?page=twitter.php">' . __('Settings','twitter-plugin') . '</a>';
 		$links[] = '<a href="http://wordpress.org/extend/plugins/twitter-plugin/faq/" target="_blank">' . __('FAQ','twitter-plugin') . '</a>';
 		$links[] = '<a href="Mailto:plugin@bestwebsoft.com">' . __('Support','twitter-plugin') . '</a>';
 	}
