@@ -83,7 +83,7 @@ if( ! function_exists( 'twttr_settings' ) ) {
 		if( ! get_option( 'twttr_options_array' ) )
 			add_option( 'twttr_options_array', $twttr_options_array_defaults, '', 'yes' );
 
-		$twttr_options_array = get_option( 'cntctfrm_options' );
+		$twttr_options_array = get_option( 'twttr_options_array' );
 
 		$twttr_options_array = array_merge( $twttr_options_array_defaults, $twttr_options_array );
 	}
