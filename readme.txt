@@ -56,6 +56,9 @@ Twitter plugin allows you to add follow button in the most easiest and flexible 
 
 == Changelog ==
 
+= 2.05 =
+**BWS Plugins sections was fixed and right now it is consisted with 3 parts: activated, installed and recommended plugins. The bug of position in the admin menu is fixed. 
+
 = 2.04 =
 *BWS Plugins sections was fixed and right now it is consisted with 2 parts: installed and recommended plugins. Icons displaying is fixed.
 
@@ -84,6 +87,9 @@ Twitter plugin allows you to add follow button in the most easiest and flexible 
 *Ability to install Twitter icon with link to the account page, including settings adjustment functionality via WordPress admin panel.
 
 == Upgrade Notice ==
+
+= 2.05 =
+*BWS Plugins sections was fixed and right now it is consisted with 3 parts: activated, installed and recommended plugins. The bug of position in the admin menu is fixed. 
 
 = 2.04 =
 BWS Plugins sections was fixed and right now it is consisted with 2 parts: installed and recommended plugins. Icons displaying is fixed.
