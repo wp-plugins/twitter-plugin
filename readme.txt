@@ -5,7 +5,7 @@ Donate link: http://bestwebsoft.com/
 Tags: twitter, text
 Requires at least: 2.9
 Tested up to: 3.2
-Stable tag: 2011.2.04
+Stable tag: 2011.2.05
 
 Add Twitter follow button to your WordPress website.
 
