@@ -237,10 +237,12 @@ if (!function_exists('twttr_follow_me')){
 //Positioning in the page	
 if(!function_exists( 'twttr_twit' ) ) {
 	function twttr_twit( $content ) {
-	global $post;
-	$permalink_post = get_permalink($post_ID);
-	$title_post = $post->post_title;
-	
+		global $post;
+		$permalink_post = get_permalink($post_ID);
+		$title_post = $post->post_title;
+		if( $title_post  == 'your-post-page-title' )
+			return $content;
+
 		$position = get_option( 'position' );
 		$str = '<div style="clear:both;margin-bottom:5px;">
 				<a href="http://twitter.com/share?url='.$permalink_post.'&text='.$title_post.'" target="_blank" title="Click here if you liked this article">
