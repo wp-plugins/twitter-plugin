@@ -2,7 +2,7 @@
 Contributors: bestwebsoft
 Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/
-Tags: twitter, text
+Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 2.9
 Tested up to: 3.2
 Stable tag: 2011.2.05
