@@ -240,7 +240,7 @@ if(!function_exists( 'twttr_twit' ) ) {
 	function twttr_twit( $content ) {
 		global $post;
 		global $twttr_options_array;
-		$permalink_post = get_permalink($post_ID);
+		$permalink_post = get_permalink($post->ID);
 		$title_post = $post->post_title;
 		if( $title_post  == 'your-post-page-title' )
 			return $content;
