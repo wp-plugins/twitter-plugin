@@ -4,7 +4,7 @@ Plugin Name: Twitter Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.05
+Version: 2.06
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -138,8 +138,8 @@ if( ! function_exists( 'twttr_settings' ) ) {
 		global $twttr_options_array;
 
 		$twttr_options_array_defaults = array(
-			'url_twitter' => 'admin',
-			'position' => ''
+			'twttr_url_twitter' => 'admin',
+			'twttr_position' => ''
 		);
 
 		if( ! get_option( 'twttr_options_array' ) )
@@ -206,7 +206,7 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 							</th>
 							<td>
 								<input style="margin-top:5px;" type="radio" name="twttr_position" value="1" <?php if ( $twttr_options_array['twttr_position'] == 1 ) echo 'checked="checked"'?> /><label for="twttr_position">Top position</label><br />
-								<input style="margin-top:5px;" type="radio" name="twttr_position" value="1" <?php if ( $twttr_options_array['twttr_position'] == 0 ) echo 'checked="checked"'?> /><label for="twttr_position">Bottom position</label><br />
+								<input style="margin-top:5px;" type="radio" name="twttr_position" value="0" <?php if ( $twttr_options_array['twttr_position'] == 0 ) echo 'checked="checked"'?> /><label for="twttr_position">Bottom position</label><br />
 								<span style="color: rgb(136, 136, 136); font-size: 10px;">When clicking this sign a user adds to their twitter page article that they liked along with a link to it.</span><br />
 							</td>
 						</tr>
@@ -227,7 +227,8 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 // score code[follow_me]
 if (!function_exists('twttr_follow_me')){
 	function twttr_follow_me() {
-		return '<a href="http://twitter.com/'.get_option("url_twitter").'" target="_blank" title="Follow me">
+		global $twttr_options_array;
+		return '<a href="http://twitter.com/'.$twttr_options_array["twttr_url_twitter"].'" target="_blank" title="Follow me">
 				 <img src="'.get_option('home').'/wp-content/plugins/twitter-plugin/images/twitter-follow.gif" alt="Follow me" />
 			  </a>';
 	}
@@ -237,18 +238,21 @@ if (!function_exists('twttr_follow_me')){
 //Positioning in the page	
 if(!function_exists( 'twttr_twit' ) ) {
 	function twttr_twit( $content ) {
-	global $post;
-	$permalink_post = get_permalink($post_ID);
-	$title_post = $post->post_title;
-	
-		$position = get_option( 'position' );
+		global $post;
+		global $twttr_options_array;
+		$permalink_post = get_permalink($post_ID);
+		$title_post = $post->post_title;
+		if( $title_post  == 'your-post-page-title' )
+			return $content;
+
+		$position = $twttr_options_array[ 'twttr_position'];
 		$str = '<div style="clear:both;margin-bottom:5px;">
 				<a href="http://twitter.com/share?url='.$permalink_post.'&text='.$title_post.'" target="_blank" title="Click here if you liked this article">
 					<img src="'.get_option('home').'/wp-content/plugins/twitter-plugin/images/twitt.gif" alt="Twitt" />
 				</a>
 			</div>';
 		if ( $position ){
-			return $qw.$str.$content;
+			return $str.$content;
 		}
 		else{
 			return $content.$str;

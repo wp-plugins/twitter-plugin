@@ -5,7 +5,7 @@ Donate link: http://bestwebsoft.com/
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 2.9
 Tested up to: 3.2
-Stable tag: 2011.2.05
+Stable tag: 2011.2.06
 
 Add Twitter follow button to your WordPress website.
 
@@ -56,8 +56,11 @@ Twitter plugin allows you to add follow button in the most easiest and flexible 
 
 == Changelog ==
 
+= 2.06 =
+*The bug with options sections in the admin page and bug of position in the frontend is fixed. Please upgrade the plugin immediately. Thank you 
+
 = 2.05 =
-**BWS Plugins sections was fixed and right now it is consisted with 3 parts: activated, installed and recommended plugins. The bug of position in the admin menu is fixed. 
+*BWS Plugins sections was fixed and right now it is consisted with 3 parts: activated, installed and recommended plugins. The bug of position in the admin menu is fixed. 
 
 = 2.04 =
 *BWS Plugins sections was fixed and right now it is consisted with 2 parts: installed and recommended plugins. Icons displaying is fixed.
@@ -88,8 +91,11 @@ Twitter plugin allows you to add follow button in the most easiest and flexible 
 
 == Upgrade Notice ==
 
+= 2.06 =
+The bug with options sections in the admin page and bug of position in the frontend is fixed. Please upgrade the plugin immediately. Thank you 
+
 = 2.05 =
-*BWS Plugins sections was fixed and right now it is consisted with 3 parts: activated, installed and recommended plugins. The bug of position in the admin menu is fixed. 
+BWS Plugins sections was fixed and right now it is consisted with 3 parts: activated, installed and recommended plugins. The bug of position in the admin menu is fixed. 
 
 = 2.04 =
 BWS Plugins sections was fixed and right now it is consisted with 2 parts: installed and recommended plugins. Icons displaying is fixed.
