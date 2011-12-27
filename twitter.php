@@ -4,7 +4,7 @@ Plugin Name: Twitter Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.06
+Version: 2.07
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -43,7 +43,9 @@ if( ! function_exists( 'bws_add_menu_render' ) ) {
 			array( 'contact-form-plugin\/contact_form.php', 'Contact Form', 'http://wordpress.org/extend/plugins/contact-form-plugin/', 'http://bestwebsoft.com/plugin/contact-form/', '/wp-admin/update.php?action=install-plugin&plugin=contact-form-plugin&_wpnonce=47757d936f' ), 
 			array( 'facebook-button-plugin\/facebook-button-plugin.php', 'Facebook Like Button Plugin', 'http://wordpress.org/extend/plugins/facebook-button-plugin/', 'http://bestwebsoft.com/plugin/facebook-like-button-plugin/', '/wp-admin/update.php?action=install-plugin&plugin=facebook-button-plugin&_wpnonce=6eb654de19' ), 
 			array( 'twitter-plugin\/twitter.php', 'Twitter Plugin', 'http://wordpress.org/extend/plugins/twitter-plugin/', 'http://bestwebsoft.com/plugin/twitter-plugin/', '/wp-admin/update.php?action=install-plugin&plugin=twitter-plugin&_wpnonce=1612c998a5' ), 
-			array( 'portfolio\/portfolio.php', 'Portfolio', 'http://wordpress.org/extend/plugins/portfolio/', 'http://bestwebsoft.com/plugin/portfolio-plugin/', '/wp-admin/update.php?action=install-plugin&plugin=portfolio&_wpnonce=488af7391d' )
+			array( 'portfolio\/portfolio.php', 'Portfolio', 'http://wordpress.org/extend/plugins/portfolio/', 'http://bestwebsoft.com/plugin/portfolio-plugin/', '/wp-admin/update.php?action=install-plugin&plugin=portfolio&_wpnonce=488af7391d' ),
+			array( 'gallery-plugin\/gallery-plugin.php', 'Gallery', 'http://wordpress.org/extend/plugins/gallery-plugin/', 'http://bestwebsoft.com/plugin/gallery-plugin/', '/wp-admin/update.php?action=install-plugin&plugin=gallery-plugin&_wpnonce=f82ce8c1ad' ),
+			array( 'adsense-plugin\/adsense-plugin.php', 'Google AdSense Plugin', 'http://wordpress.org/extend/plugins/adsense-plugin/', 'http://bestwebsoft.com/plugin/google-adsense-plugin/', '/wp-admin/update.php?action=install-plugin&plugin=adsense-plugin&_wpnonce=e6e85756de' )
 		);
 		foreach($array_plugins as $plugins)
 		{
@@ -74,63 +76,35 @@ if( ! function_exists( 'bws_add_menu_render' ) ) {
 		<div class="wrap">
 			<div class="icon32 icon32-bws" id="icon-options-general"></div>
 			<h2><?php echo $title;?></h2>
-			<?php if($count_activate > 0) { ?>
+			<?php if( 0 < $count_activate ) { ?>
 			<div>
-				<h3>Activated plugins</h3>
-				<?php foreach($array_activate as $activate_plugin) { ?>
-				<div style="float:left; width:200px;"><?php echo $activate_plugin['title']; ?></div> <p><a href="<?php echo $activate_plugin['link']; ?>">Read more</a></p>
+				<h3><?php _e( 'Activated plugins', 'twitter' ); ?></h3>
+				<?php foreach( $array_activate as $activate_plugin ) { ?>
+				<div style="float:left; width:200px;"><?php echo $activate_plugin['title']; ?></div> <p><a href="<?php echo $activate_plugin['link']; ?>"><?php echo __( "Read more", 'twitter'); ?></a></p>
 				<?php } ?>
 			</div>
 			<?php } ?>
-			<?php if($count_install > 0) { ?>
+			<?php if( 0 < $count_install ) { ?>
 			<div>
-				<h3>Installed plugins</h3>
+				<h3><?php _e( 'Installed plugins', 'twitter' ); ?></h3>
 				<?php foreach($array_install as $install_plugin) { ?>
-				<div style="float:left; width:200px;"><?php echo $install_plugin['title']; ?></div> <p><a href="<?php echo $install_plugin['link']; ?>">Read more</a></p>
+				<div style="float:left; width:200px;"><?php echo $install_plugin['title']; ?></div> <p><a href="<?php echo $install_plugin['link']; ?>"><?php echo __( "Read more", 'twitter'); ?></a></p>
 				<?php } ?>
 			</div>
 			<?php } ?>
-			<?php if($count_recomend > 0) { ?>
+			<?php if( 0 < $count_recomend ) { ?>
 			<div>
-				<h3>Recommended plugins</h3>
-				<?php foreach($array_recomend as $recomend_plugin) { ?>
-				<div style="float:left; width:200px;"><?php echo $recomend_plugin['title']; ?></div> <p><a href="<?php echo $recomend_plugin['link']; ?>">Read more</a> <a href="<?php echo $recomend_plugin['href']; ?>">Download</a> <a class="install-now" href="<?php echo get_bloginfo("url") . $recomend_plugin['slug']; ?>" title="<?php esc_attr( sprintf( __( 'Install %s' ), $recomend_plugin['title'] ) ) ?>"><?php echo __( 'Install Now' ) ?></a></p>
+				<h3><?php _e( 'Recommended plugins', 'twitter' ); ?></h3>
+				<?php foreach( $array_recomend as $recomend_plugin ) { ?>
+				<div style="float:left; width:200px;"><?php echo $recomend_plugin['title']; ?></div> <p><a href="<?php echo $recomend_plugin['link']; ?>"><?php echo __( "Read more", 'twitter'); ?></a> <a href="<?php echo $recomend_plugin['href']; ?>"><?php echo __( "Download", 'twitter'); ?></a> <a class="install-now" href="<?php echo get_bloginfo( "url" ) . $recomend_plugin['slug']; ?>" title="<?php esc_attr( sprintf( __( 'Install %s' ), $recomend_plugin['title'] ) ) ?>"><?php echo __( 'Install Now' ) ?></a></p>
 				<?php } ?>
-				<span style="color: rgb(136, 136, 136); font-size: 10px;">If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site <a href="http://bestwebsoft.com/contact/">http://bestwebsoft.com/contact/</a></span>
+				<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php _e( 'If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site', 'twitter' ); ?> <a href="http://bestwebsoft.com/contact/">http://bestwebsoft.com/contact/</a></span>
 			</div>
 			<?php } ?>
 		</div>
 		<?php
 	}
 }
-
-if( ! function_exists( 'bws_plugin_header' ) ) {
-	function bws_plugin_header() {
-		global $post_type;
-		?>
-		<style>
-		#adminmenu #toplevel_page_bws_plugins div.wp-menu-image
-		{
-			background: url("<?php echo get_bloginfo('url');?>/wp-content/plugins/twitter-plugin/images/icon_16.png") no-repeat scroll center center transparent;
-		}
-		#adminmenu #toplevel_page_bws_plugins:hover div.wp-menu-image,#adminmenu #toplevel_page_bws_plugins.wp-has-current-submenu div.wp-menu-image
-		{
-			background: url("<?php echo get_bloginfo('url');?>/wp-content/plugins/twitter-plugin/images/icon_16_c.png") no-repeat scroll center center transparent;
-		}	
-		.wrap #icon-options-general.icon32-bws
-		{
-			background: url("<?php echo get_bloginfo('url');?>/wp-content/plugins/twitter-plugin/images/icon_36.png") no-repeat scroll left top transparent;
-		}
-		#toplevel_page_bws_plugins .wp-submenu .wp-first-item
-		{
-			display:none;
-		}
-		</style>
-		<?php
-	}
-}
-
-add_action('admin_head', 'bws_plugin_header');
 
 // Register settings for plugin
 if( ! function_exists( 'twttr_settings' ) ) {
@@ -154,8 +128,8 @@ if( ! function_exists( 'twttr_settings' ) ) {
 //add meny
 if(!function_exists ( 'twttr_add_pages' ) ) {
 	function twttr_add_pages() {
-		add_menu_page(__('BWS Plugins'), __('BWS Plugins'), 'manage_options', 'bws_plugins', 'bws_add_menu_render', WP_CONTENT_URL."/plugins/twitter-plugin/images/px.png", 101); 
-		add_submenu_page('bws_plugins', 'Twitter Options', 'Twitter', 'manage_options', __FILE__, 'twttr_settings_page');
+		add_menu_page(__( 'BWS Plugins', 'twitter' ), __( 'BWS Plugins', 'twitter' ), 'manage_options', 'bws_plugins', 'bws_add_menu_render', plugins_url( 'images/px.png', __FILE__ ), 1001); 
+		add_submenu_page('bws_plugins', __( 'Twitter Options', 'twitter' ), __( 'Twitter', 'twitter' ), 'manage_options', __FILE__, 'twttr_settings_page');
 
 		//call register settings function
 		add_action( 'admin_init', 'twttr_settings' );
@@ -173,46 +147,46 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 			update_option ( "twttr_options_array", $twttr_options_array );?>
 			<div class='updated fade below-h2'>
 				<p>
-					<strong>Options saved.</strong>
+					<strong><?php echo __( "Options saved.", 'twitter' ); ?></strong>
 				</p>
 			</div>
 		<?php } ?>
 		<div class="wrap">
 			<div class="icon32 icon32-bws" id="icon-options-general"></div>
-			<h2>Twitter option</h2>
+			<h2><?php echo __( "Twitter Options", 'twitter' ); ?></h2>
 			<div>
 				<form method='post' action=" admin.php?page=twitter-plugin/twitter.php">
 					<table class="form-table">
 						<tr valign="top">
-							<th scope="row" colspan="2">Settings for the button "Follow Me":</th>
+							<th scope="row" colspan="2"><?php echo __( 'Settings for the button "Follow Me":', 'twitter' ); ?></th>
 						</tr>					
 						<tr valign="top">
 							<th scope="row">
-								Enter your username:
+								<?php echo __( "Enter your username:", 'twitter' ); ?>
 							</th>
 							<td>
 								<input name='twttr_url_twitter' type='text' value='<?php echo $twttr_options_array['twttr_url_twitter'] ?>'/><br />
-								<span style="color: rgb(136, 136, 136); font-size: 10px;">If you do not have Twitter account yet you need to create it using this link <a target="_blank" href="https://twitter.com/signup">https://twitter.com/signup</a> .</span><br />
-								<span style="color: rgb(136, 136, 136); font-size: 10px;">Put a shortcode [follow_me] on necessary page or post to use "Follow Me" button.</span><br />
-								<span style="color: rgb(136, 136, 136); font-size: 10px;">If you would like to utilize this button in another place, please put strings below into the template source code 	&#60;?php if ( function_exists( 'follow_me' ) ) echo follow_me(); ?&#62;</span>
+								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'If you do not have Twitter account yet you need to create it using this link', 'twitter' ); ?> <a target="_blank" href="https://twitter.com/signup">https://twitter.com/signup</a> .</span><br />
+								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'Put a shortcode [follow_me] on necessary page or post to use "Follow Me" button.', 'twitter' ); ?></span><br />
+								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'If you would like to utilize this button in another place, please put strings below into the template source code', 'twitter' ); ?>	&#60;?php if ( function_exists( 'follow_me' ) ) echo follow_me(); ?&#62;</span>
 							</td>
 						</tr>
 						<tr valign="top">
-							<th scope="row" colspan="2">Settings for the button "Twitter":</th>
+							<th scope="row" colspan="2"><?php echo __( 'Settings for the button "Twitter":', 'twitter' ); ?></th>
 						</tr>					
 						<tr>
 							<th>
-								Choose a position for an icon "Twitter":
+								<?php echo __( 'Choose a position for an icon "Twitter":', 'twitter' ); ?>
 							</th>
 							<td>
-								<input style="margin-top:5px;" type="radio" name="twttr_position" value="1" <?php if ( $twttr_options_array['twttr_position'] == 1 ) echo 'checked="checked"'?> /><label for="twttr_position">Top position</label><br />
-								<input style="margin-top:5px;" type="radio" name="twttr_position" value="0" <?php if ( $twttr_options_array['twttr_position'] == 0 ) echo 'checked="checked"'?> /><label for="twttr_position">Bottom position</label><br />
-								<span style="color: rgb(136, 136, 136); font-size: 10px;">When clicking this sign a user adds to their twitter page article that they liked along with a link to it.</span><br />
+								<input style="margin-top:5px;" type="radio" name="twttr_position" value="1" <?php if ( $twttr_options_array['twttr_position'] == 1 ) echo 'checked="checked"'?> /><label for="twttr_position"><?php echo __( 'Top position', 'twitter' ); ?></label><br />
+								<input style="margin-top:5px;" type="radio" name="twttr_position" value="0" <?php if ( $twttr_options_array['twttr_position'] == 0 ) echo 'checked="checked"'?> /><label for="twttr_position"><?php echo __( 'Bottom position', 'twitter' ); ?></label><br />
+								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'When clicking this sign a user adds to their twitter page article that they liked along with a link to it.', 'twitter' ); ?></span><br />
 							</td>
 						</tr>
 						<tr>
 						<td colspan="2">
-							<input type="submit" value="Save Changes" class="button-primary">
+							<input type="submit" class="button-primary" value="<?php _e( 'Save Changes' ) ?>" />
 						</td>
 					</tr>
 					</table>
@@ -228,9 +202,9 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 if (!function_exists('twttr_follow_me')){
 	function twttr_follow_me() {
 		global $twttr_options_array;
-		return '<a href="http://twitter.com/'.$twttr_options_array["twttr_url_twitter"].'" target="_blank" title="Follow me">
+		return '<div class="twttr_follow"><a href="http://twitter.com/'.$twttr_options_array["twttr_url_twitter"].'" target="_blank" title="Follow me">
 				 <img src="'.get_option('home').'/wp-content/plugins/twitter-plugin/images/twitter-follow.gif" alt="Follow me" />
-			  </a>';
+			  </a></div>';
 	}
 }
 
@@ -246,7 +220,7 @@ if(!function_exists( 'twttr_twit' ) ) {
 			return $content;
 
 		$position = $twttr_options_array[ 'twttr_position'];
-		$str = '<div style="clear:both;margin-bottom:5px;">
+		$str = '<div class="twttr_button">
 				<a href="http://twitter.com/share?url='.$permalink_post.'&text='.$title_post.'" target="_blank" title="Click here if you liked this article">
 					<img src="'.get_option('home').'/wp-content/plugins/twitter-plugin/images/twitt.gif" alt="Twitt" />
 				</a>
@@ -268,21 +242,40 @@ function twttr_action_links( $links, $file ) {
 	if ( ! $this_plugin ) $this_plugin = plugin_basename(__FILE__);
 
 	if ( $file == $this_plugin ){
-			 $settings_link = '<a href="admin.php?page=twitter-plugin/twitter.php">' . __('Settings', 'twitter-plugin') . '</a>';
+			 $settings_link = '<a href="admin.php?page=twitter-plugin/twitter.php">' . __( 'Settings', 'twitter' ) . '</a>';
 			 array_unshift( $links, $settings_link );
 		}
 	return $links;
-} // end function fcbk_bttn_plgn_action_links
+} // end function twttr_bttn_plgn_action_links
 
 function twttr_links($links, $file) {
 	$base = plugin_basename(__FILE__);
 	if ($file == $base) {
-		$links[] = '<a href="admin.php?page=twitter-plugin/twitter.php">' . __('Settings','twitter-plugin') . '</a>';
-		$links[] = '<a href="http://wordpress.org/extend/plugins/twitter-plugin/faq/" target="_blank">' . __('FAQ','twitter-plugin') . '</a>';
-		$links[] = '<a href="Mailto:plugin@bestwebsoft.com">' . __('Support','twitter-plugin') . '</a>';
+		$links[] = '<a href="admin.php?page=twitter-plugin/twitter.php">' . __( 'Settings','twitter' ) . '</a>';
+		$links[] = '<a href="http://wordpress.org/extend/plugins/twitter-plugin/faq/" target="_blank">' . __( 'FAQ','twitter' ) . '</a>';
+		$links[] = '<a href="Mailto:plugin@bestwebsoft.com">' . __( 'Support','twitter' ) . '</a>';
 	}
 	return $links;
 }
+
+//Function '_plugin_init' are using to add language files.
+if ( ! function_exists ( 'twttr_plugin_init' ) ) {
+	function twttr_plugin_init() {
+		load_plugin_textdomain( 'twitter', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' ); 
+	}
+} // end function twttr_plugin_init
+
+
+if ( ! function_exists ( 'twttr_admin_head' ) ) {
+	function twttr_admin_head() {
+		wp_register_style( 'twttrStylesheet', plugins_url( 'css/style.css', __FILE__ ) );
+		wp_enqueue_style( 'twttrStylesheet' );
+	}
+}
+
+add_action( 'init', 'twttr_plugin_init' );
+
+add_action( 'init', 'twttr_admin_head' );
 
 // adds "Settings" link to the plugin action page
 add_filter( 'plugin_action_links', 'twttr_action_links',10,2);
