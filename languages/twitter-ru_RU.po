@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: twitter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-02 16:43+0200\n"
+"PO-Revision-Date: 2012-01-02 16:43+0200\n"
+"Last-Translator: BWS <zos@bestwebsoft.com>\n"
+"Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: twitter.php:82
+msgid "Activated plugins"
+msgstr "Активированные плагины"
+
+#: twitter.php:84
+#: twitter.php:92
+#: twitter.php:100
+msgid "Read more"
+msgstr "Читать далее"
+
+#: twitter.php:84
+#: twitter.php:246
+#: twitter.php:255
+msgid "Settings"
+msgstr "Настройки"
+
+#: twitter.php:90
+msgid "Installed plugins"
+msgstr "Установленные плагины"
+
+#: twitter.php:98
+msgid "Recommended plugins"
+msgstr "Рекомендованные к установке плагины"
+
+#: twitter.php:100
+msgid "Download"
+msgstr "Скачать"
+
+#: twitter.php:100
+#, php-format
+msgid "Install %s"
+msgstr "Установлено %s"
+
+#: twitter.php:100
+msgid "Install now from wordpress.org"
+msgstr "Установить с wordpress.org"
+
+#: twitter.php:102
+msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site"
+msgstr "Если у вас есть какие-то впросы, обращайтесь на plugin@bestwebsoft.com или заполните контактную форму на нашем сайте"
+
+#: twitter.php:133
+#: twitter.php:157
+msgid "Twitter Options"
+msgstr "Настройки Twitter"
+
+#: twitter.php:133
+msgid "Twitter"
+msgstr "Twitter"
+
+#: twitter.php:151
+msgid "Options saved."
+msgstr "Опции сохранены"
+
+#: twitter.php:162
+msgid "Settings for the button \"Follow Me\":"
+msgstr "Настройки для кнопки \"Follow Me\":"
+
+#: twitter.php:166
+msgid "Enter your username:"
+msgstr "Введите ваш логин:"
+
+#: twitter.php:170
+msgid "If you do not have Twitter account yet you need to create it using this link"
+msgstr "Если у вас еще нет аккаунта на Twitter, вам надо создать его, перейдя по этой ссылке"
+
+#: twitter.php:171
+msgid "Put a shortcode [follow_me] on necessary page or post to use \"Follow Me\" button."
+msgstr "Добавьте шорткод [follow_me] в контент страницы или поста, где вы хотите вывести кнопку \"Follow Me\"."
+
+#: twitter.php:172
+msgid "If you would like to utilize this button in another place, please put strings below into the template source code"
+msgstr "Если вы хотите использовать данную кнопку в другом месте, пожалуйста, добавьте данную строку в код нужного темплейта"
+
+#: twitter.php:176
+msgid "Settings for the button \"Twitter\":"
+msgstr "Настройки для кнопки \"Twitter\":"
+
+#: twitter.php:180
+msgid "Choose a position for an icon \"Twitter\":"
+msgstr "Выбор позиции для иконки \"Twitter\":"
+
+#: twitter.php:183
+msgid "Top position"
+msgstr "Позиция вверху"
+
+#: twitter.php:184
+msgid "Bottom position"
+msgstr "Позиция внизу"
+
+#: twitter.php:185
+msgid "When clicking this sign a user adds to their twitter page article that they liked along with a link to it."
+msgstr "При нажатии этой иконки пользователь добавляет на свою  twitter страницу статью, которая им нравится, а также ссылку на него."
+
+#: twitter.php:190
+msgid "Save Changes"
+msgstr ""
+
+#: twitter.php:256
+msgid "FAQ"
+msgstr "FAQ"
+
+#: twitter.php:257
+msgid "Support"
+msgstr "Поддержка"
+
+#~ msgid "BWS Plugins"
+#~ msgstr "Плагины BWS"
+
+#~ msgid "Install Now"
+#~ msgstr "Установить сейчас"
+
+#~ msgid "Twitter options"
+#~ msgstr "Опции Twitter"
