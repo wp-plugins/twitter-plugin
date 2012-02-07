@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: twitter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-01-02 16:43+0200\n"
-"PO-Revision-Date: 2012-01-02 16:43+0200\n"
+"POT-Creation-Date: 2012-02-07 19:30+0200\n"
+"PO-Revision-Date: 2012-02-07 19:30+0200\n"
 "Last-Translator: BWS <zos@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "MIME-Version: 1.0\n"
@@ -113,6 +113,10 @@ msgstr "При нажатии этой иконки пользователь д�
 #: twitter.php:190
 msgid "Save Changes"
 msgstr ""
+
+#: twitter.php:225
+msgid "Click here if you liked this article."
+msgstr "Кликай, если понравилась данная статья."
 
 #: twitter.php:256
 msgid "FAQ"

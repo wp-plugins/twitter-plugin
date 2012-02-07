@@ -4,7 +4,7 @@ Plugin Name: Twitter Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.08
+Version: 2.09
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -222,7 +222,7 @@ if(!function_exists( 'twttr_twit' ) ) {
 
 		$position = $twttr_options_array[ 'twttr_position'];
 		$str = '<div class="twttr_button">
-				<a href="http://twitter.com/share?url='.$permalink_post.'&text='.$title_post.'" target="_blank" title="Click here if you liked this article">
+				<a href="http://twitter.com/share?url='.$permalink_post.'&text='.$title_post.'" target="_blank" title="'.__( 'Click here if you liked this article.', 'twitter' ).'">
 					<img src="'.plugins_url('images/twitt.gif', __FILE__).'" alt="Twitt" />
 				</a>
 			</div>';

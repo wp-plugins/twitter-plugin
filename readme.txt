@@ -71,6 +71,9 @@ If you create your own language pack or update the existing one, you can send <a
 
 == Changelog ==
 
+= V2.09 - 07.02.2012 =
+* NEW : Added translation for the title tag for twitter links.  
+
 = V2.08 - 02.01.2012 =
 * Changed : BWS plugins section.
 
@@ -114,6 +117,9 @@ If you create your own language pack or update the existing one, you can send <a
 *Ability to install Twitter icon with link to the account page, including settings adjustment functionality via WordPress admin panel.
 
 == Upgrade Notice ==
+
+= V2.09 =
+Added translation for the title tag for twitter links.  
 
 = V2.08 =
 BWS plugins section was changed.
