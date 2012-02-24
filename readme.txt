@@ -1,11 +1,10 @@
 ﻿=== Twitter Plugin ===
 Contributors: bestwebsoft
-Contributors: bestwebsoft
-Donate link: http://bestwebsoft.com/
+Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=13
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 2.9
 Tested up to: 3.3
-Stable tag: 2.08
+Stable tag: 2.10
 
 Add Twitter follow button to your WordPress website.
 
@@ -71,6 +70,9 @@ If you create your own language pack or update the existing one, you can send <a
 
 == Changelog ==
 
+= V2.10 - 24.02.2012 =
+* Change : Code to include styles and scripts in a plug for the correct SSL verification.
+
 = V2.09 - 07.02.2012 =
 * NEW : Added translation for the title tag for twitter links.  
 
@@ -117,6 +119,9 @@ If you create your own language pack or update the existing one, you can send <a
 *Ability to install Twitter icon with link to the account page, including settings adjustment functionality via WordPress admin panel.
 
 == Upgrade Notice ==
+
+= V2.10 =
+Changed code to include styles and scripts in a plug for the correct SSL verification.
 
 = V2.09 =
 Added translation for the title tag for twitter links.  

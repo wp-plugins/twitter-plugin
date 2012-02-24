@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: twitter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-07 19:30+0200\n"
-"PO-Revision-Date: 2012-02-07 19:30+0200\n"
+"POT-Creation-Date: 2012-02-24 16:48+0200\n"
+"PO-Revision-Date: 2012-02-24 16:48+0200\n"
 "Last-Translator: BWS <zos@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "MIME-Version: 1.0\n"
@@ -16,113 +16,113 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: twitter.php:82
+#: twitter.php:79
 msgid "Activated plugins"
 msgstr "Активированные плагины"
 
-#: twitter.php:84
-#: twitter.php:92
-#: twitter.php:100
+#: twitter.php:81
+#: twitter.php:89
+#: twitter.php:97
 msgid "Read more"
 msgstr "Читать далее"
 
-#: twitter.php:84
-#: twitter.php:246
-#: twitter.php:255
+#: twitter.php:81
+#: twitter.php:243
+#: twitter.php:252
 msgid "Settings"
 msgstr "Настройки"
 
-#: twitter.php:90
+#: twitter.php:87
 msgid "Installed plugins"
 msgstr "Установленные плагины"
 
-#: twitter.php:98
+#: twitter.php:95
 msgid "Recommended plugins"
 msgstr "Рекомендованные к установке плагины"
 
-#: twitter.php:100
+#: twitter.php:97
 msgid "Download"
 msgstr "Скачать"
 
-#: twitter.php:100
+#: twitter.php:97
 #, php-format
 msgid "Install %s"
 msgstr "Установлено %s"
 
-#: twitter.php:100
+#: twitter.php:97
 msgid "Install now from wordpress.org"
 msgstr "Установить с wordpress.org"
 
-#: twitter.php:102
+#: twitter.php:99
 msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site"
 msgstr "Если у вас есть какие-то впросы, обращайтесь на plugin@bestwebsoft.com или заполните контактную форму на нашем сайте"
 
-#: twitter.php:133
-#: twitter.php:157
+#: twitter.php:130
+#: twitter.php:152
 msgid "Twitter Options"
 msgstr "Настройки Twitter"
 
-#: twitter.php:133
+#: twitter.php:130
 msgid "Twitter"
 msgstr "Twitter"
 
-#: twitter.php:151
+#: twitter.php:148
 msgid "Options saved."
 msgstr "Опции сохранены"
 
-#: twitter.php:162
+#: twitter.php:159
 msgid "Settings for the button \"Follow Me\":"
 msgstr "Настройки для кнопки \"Follow Me\":"
 
-#: twitter.php:166
+#: twitter.php:163
 msgid "Enter your username:"
 msgstr "Введите ваш логин:"
 
-#: twitter.php:170
+#: twitter.php:167
 msgid "If you do not have Twitter account yet you need to create it using this link"
 msgstr "Если у вас еще нет аккаунта на Twitter, вам надо создать его, перейдя по этой ссылке"
 
-#: twitter.php:171
+#: twitter.php:168
 msgid "Put a shortcode [follow_me] on necessary page or post to use \"Follow Me\" button."
 msgstr "Добавьте шорткод [follow_me] в контент страницы или поста, где вы хотите вывести кнопку \"Follow Me\"."
 
-#: twitter.php:172
+#: twitter.php:169
 msgid "If you would like to utilize this button in another place, please put strings below into the template source code"
 msgstr "Если вы хотите использовать данную кнопку в другом месте, пожалуйста, добавьте данную строку в код нужного темплейта"
 
-#: twitter.php:176
+#: twitter.php:173
 msgid "Settings for the button \"Twitter\":"
 msgstr "Настройки для кнопки \"Twitter\":"
 
-#: twitter.php:180
+#: twitter.php:177
 msgid "Choose a position for an icon \"Twitter\":"
 msgstr "Выбор позиции для иконки \"Twitter\":"
 
-#: twitter.php:183
+#: twitter.php:180
 msgid "Top position"
 msgstr "Позиция вверху"
 
-#: twitter.php:184
+#: twitter.php:181
 msgid "Bottom position"
 msgstr "Позиция внизу"
 
-#: twitter.php:185
+#: twitter.php:182
 msgid "When clicking this sign a user adds to their twitter page article that they liked along with a link to it."
 msgstr "При нажатии этой иконки пользователь добавляет на свою  twitter страницу статью, которая им нравится, а также ссылку на него."
 
-#: twitter.php:190
+#: twitter.php:187
 msgid "Save Changes"
 msgstr ""
 
-#: twitter.php:225
+#: twitter.php:222
 msgid "Click here if you liked this article."
 msgstr "Кликай, если понравилась данная статья."
 
-#: twitter.php:256
+#: twitter.php:253
 msgid "FAQ"
 msgstr "FAQ"
 
-#: twitter.php:257
+#: twitter.php:254
 msgid "Support"
 msgstr "Поддержка"
 
