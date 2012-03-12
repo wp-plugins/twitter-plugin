@@ -3,25 +3,25 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=1&product_id=13
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 2.9
-Tested up to: 3.3
-Stable tag: 2.10
+Tested up to: 3.3.1
+Stable tag: 2.11
 
 Add Twitter follow button to your WordPress website.
 
 == Description ==
 
-Twitter plugin allows you to add follow button in the most easiest and flexible way.
+Twitter plugin allows you to add follow button in the most easily and flexible way.
 
-<a href="http://wordpress.org/extend/plugins/captcha/faq/" target="_blank">FAQ</a>
-<a href="http://bestwebsoft.com/plugin/captcha-plugin/" target="_blank">Support</a>
+<a href="http://wordpress.org/extend/plugins/twitter-plugin/faq/" target="_blank">FAQ</a>
+<a href="http://bestwebsoft.com/plugin/twitter-plugin/" target="_blank">Support</a>
 
 = Features =
 
-* Actions: Ability to add twitter follow button in the most easiest and flexible way.
+* Actions: Ability to add twitter follow button in the most easily and flexible way.
 * Actions: Ability to add twitter like button in the most easiest and flexible way.
 * Display: This plugin allows you to select the position for the button: top, bottom.
 
-= Translate =
+= Translation =
 
 * Russian (ru_RU)
 
@@ -45,15 +45,15 @@ If you create your own language pack or update the existing one, you can send <a
 
 = After clicking on the the Twitter icon I got Twitter home page instead of necessary account page =
 
-1. In the WordPress admin panel go to "Settings", find "Twitter" plugin settings page and enter login of your Twitter account. Then press "Save Changes" button.
+1. In WordPress admin panel go to "Settings", find "Twitter" plugin settings page and enter login of your Twitter account. Then press "Save Changes" button.
 
-2. If you do not have Twitter account yet you need to create it using this link: https://twitter.com/signup. After that go through instructions from the 1st point.
+2. If you do not have Twitter account yet you need to create it using this link: https://twitter.com/signup. After account is created go through instructions from the 1st point.
 
 = How to adjust Twitter icon position on the page =
 
-1. In the WordPress admin panel go to "Settings", find "Twitter" plugin settings page and choose one from listed positions: Top position or Bottom position. Then press "Save Changes" button.
+1. In WordPress admin panel go to "Settings", find "Twitter" plugin settings page and choose one of the listed positions: Top position or Bottom position. Then press "Save Changes" button.
 
-= After installation and setting adjustment in plugin settings it is still not working =
+= After installation and setting of adjustments at the plugin’s settings page it is still not working =
 
 1. You need to press "Save Changes" button to save all changes. Make sure that you got "Options Saved" message after saving action.
 
@@ -61,97 +61,103 @@ If you create your own language pack or update the existing one, you can send <a
 
 == Screenshots ==
 
-1. Settings with which Twitter icon located after your content.
-2. Settings result to display Twitter icon after your content.
-3. Settings with which Twitter icon located before your content.
-4. Settings result to display Twitter icon before your content.
+1. Settings with which Twitter icon is located after your content.
+2. Settings which will enable to display Twitter icon after your content.
+3. Settings which will enable to locate Twitter icon before your content.
+4. Settings which will enable to display Twitter icon before your content.
 5. Shortcode display at the page.
-6. Settings shortcode.
+6. Shortcode settings.
 
 == Changelog ==
 
+= V2.11 - 12.03.2012 =
+* Changed : BWS plugins section. 
+
 = V2.10 - 24.02.2012 =
-* Change : Code to include styles and scripts in a plug for the correct SSL verification.
+* Change : Code that is used to connect styles and scripts is added to the plugin for correct SSL verification.
 
 = V2.09 - 07.02.2012 =
-* NEW : Added translation for the title tag for twitter links.  
+* NEW : Translation for the title tag of twitter links is added.  
 
 = V2.08 - 02.01.2012 =
 * Changed : BWS plugins section.
 
 = V2.07 - 27.12.2011 =
-* NEW : Added language files for plugin.  
-* NEW : Added style for twitter button block.
+* NEW : Language files are added to the plugin.  
+* NEW : Style for twitter button block is added.
 
 = V2.06 - 13.12.2011 =
-* Bugfix : The bug with options sections in the admin page and bug of position in the frontend is fixed.
+* Bugfix : The bug with sections options at admin page and bug of positioning in the frontend are fixed.
 
 = V2.05 - 18.10.2011 =
-* Bugfix : BWS Plugins sections was fixed and right now it is consisted with 3 parts: activated, installed and recommended plugins. 
-* Bugfix : The bug of position in the admin menu is fixed. 
+* Bugfix : BWS Plugin's menu section was fixed and right now it is consisted of 3 parts: activated, installed and recommended plugins. 
+* Bugfix : The bug of positioning in admin menu is fixed. 
 
 = V2.04 - 14.07.2011 =
-* Changed : BWS Plugins sections was fixed and right now it is consisted with 2 parts: installed and recommended plugins. 
+* Changed : BWS Plugin's menu section was fixed and right now it is consisted of 2 parts: installed and recommended plugins. 
 * Bugfix : Icons displaying is fixed.
 
 = V2.03 =
 *The bug of the array_merge function is fixed in this version. Please upgrade the plugin immediately. Thank you
 
 = V2.02 =
-*The bug of the setting page link is fixed in this version. Please upgrade the plugin immediately. Thank you
+*The bug of the link to the settings page is fixed in this version. Please upgrade the plugin immediately. Thank you
 
 = V2.01 =
-*Usability at the settings page of plugin was improved.
+* Usability at the settings page of the plugin was improved.
 
 = V1.04 =
-*Fixed bugs with display 'Follow me' button with shortcode.
+* Bugs of 'Follow me' button display with shortcode is fixed.
 
 = V1.03 =
-*Possibility to use shortcode for display of Twitter 'Follow me' sign at any part of content was added. Now it is possible to add 'Follow me' sign to any part of a website and not only to news. Also if a user likes an article they can share title of this article and its link in their twitter by clicking Twitter icon.
+* Possibility to use shortcode for display of Twitter 'Follow me' sign at any part of content was added. Now it is possible to add 'Follow me' sign to any part of the website and not only to news. Also if a user likes an article they can share title of this article and its link in their twitter by clicking at the Twitter icon.
 
 = V1.02 =
-*Fixed bugs with display twitter icon.
+* Bug with twitter icon display is fixed.
 
 = V1.01 =
-*Fixed bugs with twitter icon.
+* Twitter icon bugs are fixed.
 
 = V1.00 =
-*Ability to install Twitter icon with link to the account page, including settings adjustment functionality via WordPress admin panel.
+* Ability to install Twitter icon with a link to the account page, including adjustment functionality settings via WordPress admin panel are added.
 
 == Upgrade Notice ==
 
+= V2.11 =
+BWS plugins section has been changed. 
+
 = V2.10 =
-Changed code to include styles and scripts in a plug for the correct SSL verification.
+Code that is used to connect styles and scripts is added to the plugin for correct SSL verification.
 
 = V2.09 =
-Added translation for the title tag for twitter links.  
+Translation for the title tag of twitter links is added.  
 
 = V2.08 =
 BWS plugins section was changed.
 
 = V2.07 = 
-Added language files for plugin.  Added style for twitter button block.
+Language files are added to the plugin.  Style for twitter button block is added.
 
 = V2.06 =
-The bug with options sections in the admin page and bug of position in the frontend is fixed. Please upgrade the plugin immediately. Thank you 
+The bug with options sections in admin page and bug of positioning in the frontend is fixed. Please upgrade the plugin immediately. Thank you 
 
 = V2.05 =
-BWS Plugins sections was fixed and right now it is consisted with 3 parts: activated, installed and recommended plugins. The bug of position in the admin menu is fixed. 
+BWS Plugin's menu section was fixed and right now it is consisted of 3 parts: activated, installed and recommended plugins. The bug of position in the admin menu is fixed.
 
 = V2.04 =
-BWS Plugins sections was fixed and right now it is consisted with 2 parts: installed and recommended plugins. Icons displaying is fixed.
+BWS Plugin's menu section was fixed and right now it is consisted of 2 parts: installed and recommended plugins. Icons displaying is fixed. 
 
 = V2.03 =
 The bug of the array_merge function is fixed in this version. Please upgrade the plugin immediately. Thank you
 
 = V2.02 =
-The bug of the setting page link is fixed in this version. Please upgrade the plugin immediately. Thank you
+The bug with a link to the settings page is fixed in this version. Please upgrade the plugin immediately. Thank you
 
 = V2.01 =
-Usability at the settings page of plugin was improved.
+Usability at the settings page of the plugin was improved.
 
 = V1.04 =
-Fixed bugs with display Follow Us button with shortcode. Upgrade immediately.
+Bugs with display of Follow Us button via shortcode are fixed. Upgrade immediately.
 
 = V1.03 =
 A lot of new facilities were added. Upgrade immediately.
