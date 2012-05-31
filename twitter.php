@@ -4,7 +4,7 @@ Plugin Name: Twitter Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.10
+Version: 2.12
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -273,6 +273,7 @@ if ( ! function_exists ( 'twttr_admin_head' ) ) {
 }
 
 add_action( 'init', 'twttr_plugin_init' );
+add_action( 'init', 'twttr_settings' );
 
 add_action( 'admin_enqueue_scripts', 'twttr_admin_head' );
 add_action( 'wp_enqueue_scripts', 'twttr_admin_head' );

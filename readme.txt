@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 2.9
 Tested up to: 3.3.1
-Stable tag: 2.11
+Stable tag: 2.12
 
 Add Twitter follow button to your WordPress website.
 
@@ -70,6 +70,9 @@ If you create your own language pack or update the existing one, you can send <a
 
 == Changelog ==
 
+= V2.12 - 31.05.2012 =
+* Bugfix : The bug related to twitter positioning at frontend is fixed. 
+
 = V2.11 - 12.03.2012 =
 * Changed : BWS plugins section. 
 
@@ -122,6 +125,9 @@ If you create your own language pack or update the existing one, you can send <a
 * Ability to install Twitter icon with a link to the account page, including adjustment functionality settings via WordPress admin panel are added.
 
 == Upgrade Notice ==
+
+= V2.12 =
+The bug related to twitter positioning at frontend is fixed. 
 
 = V2.11 =
 BWS plugins section has been changed. 
