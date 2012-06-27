@@ -4,7 +4,7 @@ Plugin Name: Twitter Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.12
+Version: 2.13
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -178,8 +178,8 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 								<?php echo __( 'Choose a position for an icon "Twitter":', 'twitter' ); ?>
 							</th>
 							<td>
-								<input style="margin-top:5px;" type="radio" name="twttr_position" value="1" <?php if ( $twttr_options_array['twttr_position'] == 1 ) echo 'checked="checked"'?> /><label for="twttr_position"><?php echo __( 'Top position', 'twitter' ); ?></label><br />
-								<input style="margin-top:5px;" type="radio" name="twttr_position" value="0" <?php if ( $twttr_options_array['twttr_position'] == 0 ) echo 'checked="checked"'?> /><label for="twttr_position"><?php echo __( 'Bottom position', 'twitter' ); ?></label><br />
+								<input style="margin-top:3px;" type="radio" name="twttr_position" value="1" <?php if ( $twttr_options_array['twttr_position'] == 1 ) echo 'checked="checked"'?> /> <label for="twttr_position"><?php echo __( 'Top position', 'twitter' ); ?></label><br />
+								<input style="margin-top:3px;" type="radio" name="twttr_position" value="0" <?php if ( $twttr_options_array['twttr_position'] == 0 ) echo 'checked="checked"'?> /> <label for="twttr_position"><?php echo __( 'Bottom position', 'twitter' ); ?></label><br />
 								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'When clicking this sign a user adds to their twitter page article that they liked along with a link to it.', 'twitter' ); ?></span><br />
 							</td>
 						</tr>
