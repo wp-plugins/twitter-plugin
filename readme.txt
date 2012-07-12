@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 2.9
-Tested up to: 3.4
-Stable tag: 2.13
+Tested up to: 3.4.1
+Stable tag: 2.14
 
 Add Twitter follow button to your WordPress website.
 
@@ -23,6 +23,7 @@ Twitter plugin allows you to add follow button in the most easily and flexible w
 
 = Translation =
 
+* Hebrew (he_IL) (thanks to Sagive SEO)
 * Russian (ru_RU)
 
 If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://bestwebsoft.com/" target="_blank">BWS</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
@@ -69,6 +70,10 @@ If you create your own language pack or update the existing one, you can send <a
 6. Shortcode settings.
 
 == Changelog ==
+
+= V2.14 - 10.07.2012 =
+* NEW : Hebrew language file is added to the plugin.
+* Update : We updated all functionality for wordpress 3.4.1.
 
 = V2.13 - 27.06.2012 =
 * Update : We updated all functionality for wordpress 3.4.
@@ -128,6 +133,9 @@ If you create your own language pack or update the existing one, you can send <a
 * Ability to install Twitter icon with a link to the account page, including adjustment functionality settings via WordPress admin panel are added.
 
 == Upgrade Notice ==
+
+= V2.14 =
+Hebrew language file is added to the plugin. We updated all functionality for wordpress 3.4.1.
 
 = V2.13 =
 We updated all functionality for wordpress 3.4.
