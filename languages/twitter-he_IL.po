@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Twitter Plugin v2.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-12 11:43+0300\n"
-"PO-Revision-Date: 2012-07-12 11:43+0300\n"
+"POT-Creation-Date: 2012-07-24 20:03+0300\n"
+"PO-Revision-Date: 2012-07-24 20:03+0300\n"
 "Last-Translator: zos <zos@bestwebsoft.com>\n"
 "Language-Team: \n"
 "Language: \n"
@@ -33,8 +33,8 @@ msgstr "קרא עוד"
 
 # @ twitter
 #: twitter.php:82
-#: twitter.php:244
-#: twitter.php:253
+#: twitter.php:245
+#: twitter.php:254
 msgid "Settings"
 msgstr "הגדרות"
 
@@ -141,17 +141,17 @@ msgid "Save Changes"
 msgstr "שמור שינויים"
 
 # @ twitter
-#: twitter.php:223
+#: twitter.php:224
 msgid "Click here if you liked this article."
 msgstr "אם אהבת את המאמר לחץ כאן."
 
 # @ twitter
-#: twitter.php:254
+#: twitter.php:255
 msgid "FAQ"
 msgstr "שאלות ותשובות"
 
 # @ twitter
-#: twitter.php:255
+#: twitter.php:256
 msgid "Support"
 msgstr "תמיכה"
 

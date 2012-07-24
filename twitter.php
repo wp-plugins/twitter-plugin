@@ -4,7 +4,7 @@ Plugin Name: Twitter Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.14
+Version: 2.15
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -142,7 +142,7 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 		global $twttr_options_array;
 		$message = "";
 		$error = "";
-		if ( isset ( $_REQUEST['twttr_position'] ) && isset ( $_REQUEST['twttr_url_twitter'] ) ) {
+		if ( isset ( $_REQUEST['twttr_position'] ) && isset ( $_REQUEST['twttr_url_twitter'] ) && check_admin_referer( plugin_basename(__FILE__), 'twttr_nonce_name' ) ) {
 			$twttr_options_array['twttr_url_twitter'] = $_REQUEST['twttr_url_twitter'];
 			$twttr_options_array['twttr_position'] = $_REQUEST['twttr_position'];
 			update_option ( "twttr_options_array", $twttr_options_array );
@@ -189,6 +189,7 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 						</td>
 					</tr>
 					</table>
+					<?php wp_nonce_field( plugin_basename(__FILE__), 'twttr_nonce_name' ); ?>
 				</form>
 			</div>
 		</div>
