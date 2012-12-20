@@ -2,21 +2,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Twitter Plugin v2.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-24 20:03+0300\n"
-"PO-Revision-Date: 2012-07-24 20:03+0300\n"
+"POT-Creation-Date: 2012-12-20 18:19+0200\n"
+"PO-Revision-Date: 2012-12-20 18:19+0200\n"
 "Last-Translator: zos <zos@bestwebsoft.com>\n"
 "Language-Team: \n"
-"Language: \n"
+"Language: he_IL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Poedit-Language: Hebrew\n"
-"X-Poedit-Country: ISRAEL\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: ../\n"
 "X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
 # @ twitter
@@ -25,16 +25,12 @@ msgid "Activated plugins"
 msgstr "תוספים פעילים"
 
 # @ twitter
-#: twitter.php:82
-#: twitter.php:90
-#: twitter.php:98
+#: twitter.php:82 twitter.php:90 twitter.php:98
 msgid "Read more"
 msgstr "קרא עוד"
 
 # @ twitter
-#: twitter.php:82
-#: twitter.php:245
-#: twitter.php:254
+#: twitter.php:82 twitter.php:245 twitter.php:254
 msgid "Settings"
 msgstr "הגדרות"
 
@@ -66,12 +62,15 @@ msgstr "התקן כעת מ wordpress.org"
 
 # @ twitter
 #: twitter.php:100
-msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site"
-msgstr "אם יש לך שאלות כלשהן, אנא צור עמנו קשר דרך plugin@bestwebsoft.com או שתמלא את טופס יצירת הקשר שבאתר שלנו"
+msgid ""
+"If you have any questions, please contact us via plugin@bestwebsoft.com or "
+"fill in our contact form on our site"
+msgstr ""
+"אם יש לך שאלות כלשהן, אנא צור עמנו קשר דרך plugin@bestwebsoft.com או שתמלא "
+"את טופס יצירת הקשר שבאתר שלנו"
 
 # @ twitter
-#: twitter.php:131
-#: twitter.php:153
+#: twitter.php:131 twitter.php:153
 msgid "Twitter Options"
 msgstr "אפשרויות טוויטר"
 
@@ -97,18 +96,27 @@ msgstr "הזן את שם המשתמש שלך:"
 
 # @ twitter
 #: twitter.php:168
-msgid "If you do not have Twitter account yet you need to create it using this link"
+msgid ""
+"If you do not have Twitter account yet you need to create it using this link"
 msgstr "אם אין לך עדיין חשבון טוויטר, אתה יכול ליצור אותו דרך קישור זה"
 
 # @ twitter
 #: twitter.php:169
-msgid "Put a shortcode [follow_me] on necessary page or post to use \"Follow Me\" button."
-msgstr "שים את קיצור הקוד [follow_me] בכל דף או פוסט בו אתה רוצה להשתמש בכפתור \"עקוב אחרי\"."
+msgid ""
+"Put a shortcode [follow_me] on necessary page or post to use \"Follow Me\" "
+"button."
+msgstr ""
+"שים את קיצור הקוד [follow_me] בכל דף או פוסט בו אתה רוצה להשתמש בכפתור "
+"\"עקוב אחרי\"."
 
 # @ twitter
 #: twitter.php:170
-msgid "If you would like to utilize this button in another place, please put strings below into the template source code"
-msgstr "אם תרצה להשתמש בכפתור הזה במקום אחר, בבקשה הזן את המחרוזות שלהלן אל קוד המקור של התבנית"
+msgid ""
+"If you would like to utilize this button in another place, please put "
+"strings below into the template source code"
+msgstr ""
+"אם תרצה להשתמש בכפתור הזה במקום אחר, בבקשה הזן את המחרוזות שלהלן אל קוד "
+"המקור של התבנית"
 
 # @ twitter
 #: twitter.php:174
@@ -132,8 +140,11 @@ msgstr "למטה"
 
 # @ twitter
 #: twitter.php:183
-msgid "When clicking this sign a user adds to their twitter page article that they liked along with a link to it."
-msgstr "כאשר משתמש לוחץ על סמל זה, הוא מוסיף לטוויטר שלו את המאמר שאהב עם קישור אליו."
+msgid ""
+"When clicking this sign a user adds to their twitter page article that they "
+"liked along with a link to it."
+msgstr ""
+"כאשר משתמש לוחץ על סמל זה, הוא מוסיף לטוויטר שלו את המאמר שאהב עם קישור אליו."
 
 # @ default
 #: twitter.php:188
@@ -154,4 +165,3 @@ msgstr "שאלות ותשובות"
 #: twitter.php:256
 msgid "Support"
 msgstr "תמיכה"
-
