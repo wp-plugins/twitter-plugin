@@ -26,7 +26,7 @@ Twitter plugin allows you to add follow button in the most easily and flexible w
 = Translation =
 
 * Arabic (ar_AR) (thanks to Albayan Design Hani Aladoli)
-* Danish (da_DK) (thanks to Tom, www.artikelforlaget.dk)
+* Danish (da_DK) (thanks to <a herf="admin@artikelforlaget.dk">Tom</a>, www.artikelforlaget.dk)
 * Hebrew (he_IL) (thanks to Sagive SEO)
 * Italian (it_IT) (thanks to Manuel)
 * Russian (ru_RU)
