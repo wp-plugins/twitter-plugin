@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 2.9
-Tested up to: 3.5
-Stable tag: 2.17
+Tested up to: 3.5.1
+Stable tag: 2.18
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -76,6 +76,10 @@ If you create your own language pack or update the existing one, you can send <a
 6. Shortcode settings.
 
 == Changelog ==
+
+= V2.18 - 31.01.2013 =
+* Bugfix : Bugs in admin menu were fixed.
+* Update : We updated all functionality for wordpress 3.5.1.
 
 = V2.17 - 25.01.2013 =
 * NEW : Danish language file is added to the plugin.
@@ -150,6 +154,9 @@ If you create your own language pack or update the existing one, you can send <a
 * Ability to install Twitter icon with a link to the account page, including adjustment functionality settings via WordPress admin panel are added.
 
 == Upgrade Notice ==
+
+= V2.18 =
+Bugs in admin menu were fixed. We updated all functionality for wordpress 3.5.1.
 
 = V2.17 =
 Danish language file is added to the plugin.
