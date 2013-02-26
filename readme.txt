@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 2.9
 Tested up to: 3.5.1
-Stable tag: 2.20
+Stable tag: 2.21
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,6 +27,7 @@ Twitter plugin allows you to add follow button in the most easily and flexible w
 
 * Arabic (ar_AR) (thanks to Albayan Design Hani Aladoli)
 * Danish (da_DK) (thanks to <a herf="admin@artikelforlaget.dk">Tom</a>, www.artikelforlaget.dk)
+* Dutch (nl_NL) (thanks to <a herf="mailto:jan-willem.jwr.wilmsen@essent.nl">Jan-Willem</a>, http://directic.nl)
 * Hebrew (he_IL) (thanks to Sagive SEO)
 * Italian (it_IT) (thanks to Manuel)
 * Russian (ru_RU)
@@ -77,6 +78,9 @@ If you create your own language pack or update the existing one, you can send <a
 6. Shortcode settings.
 
 == Changelog ==
+
+= V2.21 - 26.02.2013 =
+* NEW : Dutch language file was added to the plugin.
 
 = V2.20 - 26.02.2013 =
 * NEW : We added functionality for turning off the button "Twitter".
@@ -161,6 +165,9 @@ If you create your own language pack or update the existing one, you can send <a
 * Ability to install Twitter icon with a link to the account page, including adjustment functionality settings via WordPress admin panel are added.
 
 == Upgrade Notice ==
+
+= V2.21 =
+Dutch language file was added to the plugin.
 
 = V2.20 =
 We added functionality for turning off the button "Twitter".
