@@ -4,7 +4,7 @@ Plugin Name: Twitter Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.19
+Version: 2.20
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -114,7 +114,8 @@ if( ! function_exists( 'twttr_settings' ) ) {
 
 		$twttr_options_array_defaults = array(
 			'twttr_url_twitter' => 'admin',
-			'twttr_position' => ''
+			'twttr_position' => '',
+			'twttr_disable' => '0'
 		);
 
 		if( ! get_option( 'twttr_options_array' ) )
@@ -147,6 +148,7 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 		if ( isset ( $_REQUEST['twttr_position'] ) && isset ( $_REQUEST['twttr_url_twitter'] ) && check_admin_referer( plugin_basename(__FILE__), 'twttr_nonce_name' ) ) {
 			$twttr_options_array['twttr_url_twitter'] = $_REQUEST['twttr_url_twitter'];
 			$twttr_options_array['twttr_position'] = $_REQUEST['twttr_position'];
+			$twttr_options_array['twttr_disable'] = isset( $_REQUEST["twttr_disable"] ) ? 1 : 0;
 			update_option ( "twttr_options_array", $twttr_options_array );
 			$message = __( "Options saved.", 'twitter' );
 		} ?>
@@ -176,6 +178,13 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 							<th scope="row" colspan="2"><?php echo __( 'Settings for the button "Twitter":', 'twitter' ); ?></th>
 						</tr>					
 						<tr>
+							<th><?php echo __( 'Turn off the button "Twitter":', 'twitter' ); ?></th>							
+							<td>
+								<input type="checkbox" name="twttr_disable" value="1" <?php if( 1 == $twttr_options_array["twttr_disable"] ) echo "checked=\"checked\""; ?> /><br />
+								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'The button "T" will not displaying. Just a shortcode [follow_me] will work.', 'twitter' ); ?></span><br />
+							</td>
+						</tr>
+						<tr>
 							<th>
 								<?php echo __( 'Choose a position for an icon "Twitter":', 'twitter' ); ?>
 							</th>
@@ -186,10 +195,10 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 							</td>
 						</tr>
 						<tr>
-						<td colspan="2">
-							<input type="submit" class="button-primary" value="<?php _e( 'Save Changes' ) ?>" />
-						</td>
-					</tr>
+							<td colspan="2">
+								<input type="submit" class="button-primary" value="<?php _e( 'Save Changes' ) ?>" />
+							</td>
+						</tr>
 					</table>
 					<?php wp_nonce_field( plugin_basename(__FILE__), 'twttr_nonce_name' ); ?>
 				</form>
@@ -209,7 +218,6 @@ if (!function_exists('twttr_follow_me')){
 			  </a></div>';
 	}
 }
-
 	
 //Positioning in the page	
 if(!function_exists( 'twttr_twit' ) ) {
@@ -218,25 +226,27 @@ if(!function_exists( 'twttr_twit' ) ) {
 		global $twttr_options_array;
 		$permalink_post = get_permalink($post->ID);
 		$title_post = $post->post_title;
-		if( $title_post  == 'your-post-page-title' )
+		if ( $title_post == 'your-post-page-title' )
 			return $content;
 
-		$position = $twttr_options_array[ 'twttr_position'];
-		$str = '<div class="twttr_button">
-				<a href="http://twitter.com/share?url='.$permalink_post.'&text='.$title_post.'" target="_blank" title="'.__( 'Click here if you liked this article.', 'twitter' ).'">
-					<img src="'.plugins_url('images/twitt.gif', __FILE__).'" alt="Twitt" />
-				</a>
-			</div>';
-		if ( $position ){
-			return $str.$content;
-		}
-		else{
-			return $content.$str;
+		if ( 0 == $twttr_options_array['twttr_disable'] ) {
+			$position = $twttr_options_array['twttr_position'];
+			$str = '<div class="twttr_button">
+					<a href="http://twitter.com/share?url='.$permalink_post.'&text='.$title_post.'" target="_blank" title="'.__( 'Click here if you liked this article.', 'twitter' ).'">
+						<img src="'.plugins_url('images/twitt.gif', __FILE__).'" alt="Twitt" />
+					</a>
+				</div>';
+			if ( $position ) {
+				return $str.$content;
+			} else {
+				return $content.$str;
+			}
+		} else {
+			return $content;
 		}
 	}
 }
 //Positioning in the page.End.
-
 
 function twttr_action_links( $links, $file ) {
 		//Static so we don't call plugin_basename on every plugin row.
