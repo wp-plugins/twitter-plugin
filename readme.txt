@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 2.9
 Tested up to: 3.5.1
-Stable tag: 2.21
+Stable tag: 2.22
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,13 +26,14 @@ Twitter plugin allows you to add follow button in the most easily and flexible w
 = Translation =
 
 * Arabic (ar_AR) (thanks to Albayan Design Hani Aladoli)
-* Danish (da_DK) (thanks to <a herf="admin@artikelforlaget.dk">Tom</a>, www.artikelforlaget.dk)
-* Dutch (nl_NL) (thanks to <a herf="mailto:jan-willem.jwr.wilmsen@essent.nl">Jan-Willem</a>, www.directic.nl)
+* Danish (da_DK) (thanks to <a href="admin@artikelforlaget.dk">Tom</a>, www.artikelforlaget.dk)
+* Dutch (nl_NL) (thanks to <a href="mailto:jan-willem.jwr.wilmsen@essent.nl">Jan-Willem</a>, www.directic.nl)
 * Hebrew (he_IL) (thanks to Sagive SEO)
 * Italian (it_IT) (thanks to Manuel)
 * Russian (ru_RU)
 * Slovak (sk_SK) (thanks to Branco Radenovich)
-* Spanish (es_ES)(thanks to <a herf="mailto:mrjosefernando@gmail.com">Fernando De León</a>)
+* Spanish (es_ES)(thanks to <a href="mailto:mrjosefernando@gmail.com">Fernando De León</a>)
+* Ukrainian (uk) (thanks to <a href="http://www.cmd-soft.com">Cmd Soft</a>)
 
 If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://bestwebsoft.com/" target="_blank">BWS</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
@@ -78,6 +79,9 @@ If you create your own language pack or update the existing one, you can send <a
 6. Shortcode settings.
 
 == Changelog ==
+
+= V2.22 - 05.03.2013 =
+* NEW : Ukrainian language file was added to the plugin.
 
 = V2.21 - 26.02.2013 =
 * NEW : Dutch language file was added to the plugin.
@@ -165,6 +169,9 @@ If you create your own language pack or update the existing one, you can send <a
 * Ability to install Twitter icon with a link to the account page, including adjustment functionality settings via WordPress admin panel are added.
 
 == Upgrade Notice ==
+
+= V2.22 =
+Ukrainian language file was added to the plugin.
 
 = V2.21 =
 Dutch language file was added to the plugin.
