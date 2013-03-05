@@ -1,0 +1,135 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: twitter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-20 09:31+0300\n"
+"PO-Revision-Date: 2013-02-20 09:31+0300\n"
+"Last-Translator: \n"
+"Language-Team: Fernando De León <mrjosefernando@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_DO\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: twitter.php:82
+msgid "Activated plugins"
+msgstr "Pugin Activado"
+
+#: twitter.php:84
+#: twitter.php:92
+#: twitter.php:100
+msgid "Read more"
+msgstr "Leer m&aacute;"
+
+#: twitter.php:84
+#: twitter.php:247
+#: twitter.php:256
+msgid "Settings"
+msgstr "Configuraci&oacute;n"
+
+#: twitter.php:90
+msgid "Installed plugins"
+msgstr "Plugins instalados"
+
+#: twitter.php:98
+msgid "Recommended plugins"
+msgstr "Plugins recomendados"
+
+#: twitter.php:100
+msgid "Download"
+msgstr "Descargar"
+
+#: twitter.php:100
+#, php-format
+msgid "Install %s"
+msgstr "Instalar %s"
+
+#: twitter.php:100
+msgid "Install now from wordpress.org"
+msgstr "Instalar desde wordpress.org"
+
+#: twitter.php:102
+msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site"
+msgstr "Si usted tiene alguna pregunta o inquietud, por favor, comun&iacute;quese con nosotros a trav&eacute;s de plugin@bestwebsoft.com o llene el formulario ce cont&aacute;cto en nuestro sitio"
+
+#: twitter.php:133
+#: twitter.php:155
+msgid "Twitter Options"
+msgstr "Configuraci&oacute;n de Twitter"
+
+#: twitter.php:133
+msgid "Twitter"
+msgstr "Twitter"
+
+#: twitter.php:151
+msgid "Options saved."
+msgstr "Configuraci&oacute;n guardada."
+
+#: twitter.php:162
+msgid "Settings for the button \"Follow Me\":"
+msgstr "Configurar el bot&oacute;n \"S&iacute;gueme\":"
+
+#: twitter.php:166
+msgid "Enter your username:"
+msgstr "Introduce tu nombre de usuario :"
+
+#: twitter.php:170
+msgid "If you do not have Twitter account yet you need to create it using this link"
+msgstr "Si no tienes una cuenta de Twitter puedes crear una pulsando este link "
+
+#: twitter.php:171
+msgid "Put a shortcode [follow_me] on necessary page or post to use \"Follow Me\" button."
+msgstr "Introduce el c&oacute;digo abreviado [follow_me] en las p&aacute;ginas y mensajes donde quuires que se vea el bot&oacute;n \"S&iacute;gueme\""
+
+#: twitter.php:172
+msgid "If you would like to utilize this button in another place, please put strings below into the template source code"
+msgstr "Si desea utilizar este bot&oacute;n en otro lugar, por favor, ponga el c&oacute;digo siguienteen el c&oacute;digo de fuente de su plantilla"
+
+#: twitter.php:176
+msgid "Settings for the button \"Twitter\":"
+msgstr "Configuraci&oacute;n del bot&oacute;n \"Twitter\":"
+
+#: twitter.php:180
+msgid "Choose a position for an icon \"Twitter\":"
+msgstr "El&iacute;ja una posici&oacute;n para el &iacute;cono \"Twitter\":"
+
+#: twitter.php:183
+msgid "Top position"
+msgstr "Posici&oacute;n superior"
+
+#: twitter.php:184
+msgid "Bottom position"
+msgstr "Posici&oacute;n baja"
+
+#: twitter.php:185
+msgid "When clicking this sign a user adds to their twitter page article that they liked along with a link to it."
+msgstr "Al hacer clic en este signo, un usuario agrega a su p&aacute;gina de Twitter el art&iacute;culo que le gusta junto con un enlace a la misma."
+
+#: twitter.php:190
+msgid "Save Changes"
+msgstr "Configuraci&oacute;n guardada"
+
+#: twitter.php:226
+msgid "Click here if you liked this article."
+msgstr "Click si te gusta este art&iacute;culo."
+
+#: twitter.php:257
+msgid "FAQ"
+msgstr "Preguntas m&aacute;s frecuentes"
+
+#: twitter.php:258
+msgid "Support"
+msgstr "Ayuda"
+
+#~ msgid "BWS Plugins"
+#~ msgstr "BWS Plugins"
+#~ msgid "Install Now"
+#~ msgstr "Instalar ahora"
+#~ msgid "Twitter options"
+#~ msgstr "Opciones de Twitter"
+
