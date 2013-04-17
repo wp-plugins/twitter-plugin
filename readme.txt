@@ -4,24 +4,24 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 2.9
 Tested up to: 3.5.1
-Stable tag: 2.22
+Stable tag: 2.23
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add Twitter follow button to your WordPress website.
+Add a Twitter "Follow" button to your WordPress website.
 
 == Description ==
 
-Twitter plugin allows you to add follow button in the most easily and flexible way.
+Twitter plugin allows you to add the Follow button the easiest way.
 
 <a href="http://wordpress.org/extend/plugins/twitter-plugin/faq/" target="_blank">FAQ</a>
 <a href="http://bestwebsoft.com/plugin/twitter-plugin/" target="_blank">Support</a>
 
 = Features =
 
-* Actions: Ability to add twitter follow button in the most easily and flexible way.
-* Actions: Ability to add twitter like button in the most easiest and flexible way.
-* Display: This plugin allows you to select the position for the button: top, bottom.
+* Actions: Add a Twitter "Follow" button easily.
+* Actions: Add a Twitter "Like" button the easiest way.
+* Display: This plugin allows you to choose the button position - top, bottom.
 
 = Translation =
 
@@ -33,82 +33,85 @@ Twitter plugin allows you to add follow button in the most easily and flexible w
 * Russian (ru_RU)
 * Slovak (sk_SK) (thanks to Branco Radenovich)
 * Spanish (es_ES)(thanks to <a href="mailto:mrjosefernando@gmail.com">Fernando De León</a>)
-* Ukrainian (uk) (thanks to <a href="http://www.cmd-soft.com">Cmd Soft</a>)
+* Ukrainian (uk) (thanks to Cmd Soft, www.cmd-soft.com)
 
 If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://bestwebsoft.com/" target="_blank">BWS</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 == Installation ==
 
-1. Upload `Twitter` folder to the `/wp-content/plugins/` directory.
-2. Activate the plugin through the 'Plugins' menu in your WordPress admin panel.
-3. You can adjust necessary settings through your WordPress admin pane in "Settings" > "Twitter".
+1. Upload the folder `Twitter` to the directory `/wp-content/plugins/`.
+2. Activate the plugin via the 'Plugins' menu in your WordPress admin panel.
+3. You can adjust the necessary settings using your WordPress admin panel in "Settings" > "Twitter".
 
 == Frequently Asked Questions ==
 
-= I cannot see Twitter icon in the post after plugin installation =
+= I cannot see the Twitter icon in the post after the plugin installation =
 
-1. In the WordPress admin panel go to "Plugins", find "Twitter" plugin and press "Activate".
+1. In the WordPress admin panel go to "Plugins", find the "Twitter" plugin and click "Activate".
 
-= How I can deactivate the plugin =
+= How can I deactivate the plugin =
 
-1. In the WordPress admin panel go to "Plugins", find "Twitter" plugin and press "Deactivate".
+1. In the WordPress admin panel go to "Plugins", find the "Twitter" plugin and click "Deactivate".
 
-= After clicking on the the Twitter icon I got Twitter home page instead of necessary account page =
+= After clicking the Twitter icon I see the Twitter Home page instead of the necessary account page =
 
-1. In WordPress admin panel go to "Settings", find "Twitter" plugin settings page and enter login of your Twitter account. Then press "Save Changes" button.
+1. In the WordPress admin panel go to "Settings", find the "Twitter" plugin settings page and enter your Twitter login. Then click "Save Changes".
 
-2. If you do not have Twitter account yet you need to create it using this link: https://twitter.com/signup. After account is created go through instructions from the 1st point.
+2. If you do not have Twitter account yet you should create it using this link: https://twitter.com/signup. After account is created please follow the instructions above.
 
-= How to adjust Twitter icon position on the page =
+= How to adjust the Twitter icon position on the page =
 
-1. In WordPress admin panel go to "Settings", find "Twitter" plugin settings page and choose one of the listed positions: Top position or Bottom position. Then press "Save Changes" button.
+1. In the WordPress admin panel go to "Settings", find the Twitter plugin settings page and select one of the listed positions: Top position or Bottom position. Then click "Save Changes".
 
-= After installation and setting of adjustments at the plugin’s settings page it is still not working =
+= After installation and settings adjustment on the plugin settings page it is not working still =
 
-1. You need to press "Save Changes" button to save all changes. Make sure that you got "Options Saved" message after saving action.
+1. Please click "Save Changes". Make sure that you got the message "Options Saved".
 
-2. After saving your settings you need to refresh your web page where Twitter icon should be located.
+2. After saving your settings you should refresh your web page where the Twitter icon should be placed.
 
 == Screenshots ==
 
-1. Settings with which Twitter icon is located after your content.
-2. Settings which will enable to display Twitter icon after your content.
-3. Settings which will enable to locate Twitter icon before your content.
-4. Settings which will enable to display Twitter icon before your content.
-5. Shortcode display at the page.
+1. Settings to place the Twitter icon below the content.
+2. Display the Twitter icon below the content.
+3. Place the Twitter icon above the content.
+4. Display the Twitter icon above the content.
+5. Display on the page.
 6. Shortcode settings.
 
 == Changelog ==
 
+= V2.23 - 17.04.2013 =
+* Update : The English language file is updated in the plugin.
+
 = V2.22 - 05.03.2013 =
-* NEW : Ukrainian language file was added to the plugin.
+* NEW : The Ukrainian language file is added to the plugin.
 
 = V2.21 - 26.02.2013 =
-* NEW : Dutch language file was added to the plugin.
+* NEW : The Dutch language file is added to the plugin.
 
 = V2.20 - 26.02.2013 =
 * NEW : We added functionality for turning off the button "Twitter".
 
 = V2.19 - 20.02.2013 =
-* NEW : Spanish language file was added to the plugin.
+* NEW : The Spanish language file is added to the plugin.
 
 = V2.18 - 31.01.2013 =
 * Bugfix : Bugs in admin menu were fixed.
 * Update : We updated all functionality for wordpress 3.5.1.
 
 = V2.17 - 25.01.2013 =
-* NEW : Danish language file is added to the plugin.
+* NEW : The Danish language file is added to the plugin.
 
 = V2.16 - 20.12.2012 =
 * NEW : Slovak and Italian language files are added to the plugin.
 * Update : We updated all functionality for wordpress 3.5.
 
 = V2.15 - 24.07.2012 =
-* NEW : Arabic language file is added to the plugin.
+* NEW : The Arabic language file is added to the plugin.
 * Bugfix : Cross Site Request Forgery bug was fixed.
 
 = V2.14 - 10.07.2012 =
-* NEW : Hebrew language file is added to the plugin.
+* NEW : The Hebrew language file is added to the plugin.
 * Update : We updated all functionality for wordpress 3.4.1.
 
 = V2.13 - 27.06.2012 =
@@ -170,11 +173,14 @@ If you create your own language pack or update the existing one, you can send <a
 
 == Upgrade Notice ==
 
+= V2.23 =
+The English language is updated in the plugin.
+
 = V2.22 =
-Ukrainian language file was added to the plugin.
+The Ukrainian language is was added to the plugin.
 
 = V2.21 =
-Dutch language file was added to the plugin.
+The Dutch language file is added to the plugin.
 
 = V2.20 =
 We added functionality for turning off the button "Twitter".
@@ -186,16 +192,16 @@ Spanish language file was added to the plugin.
 Bugs in admin menu were fixed. We updated all functionality for wordpress 3.5.1.
 
 = V2.17 =
-Danish language file is added to the plugin.
+The Danish language file is added to the plugin.
 
 = V2.16 =
 Slovak and Italian language files are added to the plugin. We updated all functionality for wordpress 3.5.
 
 = V2.15 =
-Arabic language file is added to the plugin. Cross Site Request Forgery bug was fixed.
+The Arabic language file is added to the plugin. Cross Site Request Forgery bug was fixed.
 
 = V2.14 =
-Hebrew language file is added to the plugin. We updated all functionality for wordpress 3.4.1.
+The Hebrew language file is added to the plugin. We updated all functionality for wordpress 3.4.1.
 
 = V2.13 =
 We updated all functionality for wordpress 3.4.

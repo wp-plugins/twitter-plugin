@@ -4,7 +4,7 @@ Plugin Name: Twitter Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.22
+Version: 2.23
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -99,7 +99,7 @@ if( ! function_exists( 'bws_add_menu_render' ) ) {
 				<?php foreach( $array_recomend as $recomend_plugin ) { ?>
 				<div style="float:left; width:200px;"><?php echo $recomend_plugin['title']; ?></div> <p><a href="<?php echo $recomend_plugin['link']; ?>" target="_blank"><?php echo __( "Read more", 'twitter'); ?></a> <a href="<?php echo $recomend_plugin['href']; ?>" target="_blank"><?php echo __( "Download", 'twitter'); ?></a> <a class="install-now" href="<?php echo get_bloginfo( "url" ) . $recomend_plugin['slug']; ?>" title="<?php esc_attr( sprintf( __( 'Install %s' ), $recomend_plugin['title'] ) ) ?>" target="_blank"><?php echo __( 'Install now from wordpress.org', 'twitter' ) ?></a></p>
 				<?php } ?>
-				<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php _e( 'If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site', 'twitter' ); ?> <a href="http://bestwebsoft.com/contact/">http://bestwebsoft.com/contact/</a></span>
+				<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php _e( 'If you have any questions, please contact us via plugin@bestwebsoft.com or fill out the contact form on our website', 'twitter' ); ?> <a href="http://bestwebsoft.com/contact/">http://bestwebsoft.com/contact/</a></span>
 			</div>
 			<?php } ?>
 		</div>
@@ -131,7 +131,7 @@ if( ! function_exists( 'twttr_settings' ) ) {
 if(!function_exists ( 'twttr_add_pages' ) ) {
 	function twttr_add_pages() {
 		add_menu_page( 'BWS Plugins', 'BWS Plugins', 'manage_options', 'bws_plugins', 'bws_add_menu_render', plugins_url( 'images/px.png', __FILE__ ), 1001); 
-		add_submenu_page('bws_plugins', __( 'Twitter Options', 'twitter' ), __( 'Twitter', 'twitter' ), 'manage_options', 'twitter.php', 'twttr_settings_page');
+		add_submenu_page('bws_plugins', __( 'Twitter Settings', 'twitter' ), __( 'Twitter', 'twitter' ), 'manage_options', 'twitter.php', 'twttr_settings_page');
 
 		//call register settings function
 		add_action( 'admin_init', 'twttr_settings' );
@@ -150,11 +150,11 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 			$twttr_options_array['twttr_position'] = $_REQUEST['twttr_position'];
 			$twttr_options_array['twttr_disable'] = isset( $_REQUEST["twttr_disable"] ) ? 1 : 0;
 			update_option ( "twttr_options_array", $twttr_options_array );
-			$message = __( "Options saved.", 'twitter' );
+			$message = __( "Settings saved", 'twitter' );
 		} ?>
 		<div class="wrap">
 			<div class="icon32 icon32-bws" id="icon-options-general"></div>
-			<h2><?php echo __( "Twitter Options", 'twitter' ); ?></h2>
+			<h2><?php echo __( "Twitter Settings", 'twitter' ); ?></h2>
 			<div class="updated fade" <?php if( empty( $message ) || $error != "" ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
 			<div class="error" <?php if( "" == $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $error; ?></strong></p></div>
 			<div>
@@ -169,29 +169,29 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 							</th>
 							<td>
 								<input name='twttr_url_twitter' type='text' value='<?php echo $twttr_options_array['twttr_url_twitter'] ?>'/><br />
-								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'If you do not have Twitter account yet you need to create it using this link', 'twitter' ); ?> <a target="_blank" href="https://twitter.com/signup">https://twitter.com/signup</a> .</span><br />
-								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'Put a shortcode [follow_me] on necessary page or post to use "Follow Me" button.', 'twitter' ); ?></span><br />
-								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'If you would like to utilize this button in another place, please put strings below into the template source code', 'twitter' ); ?>	&#60;?php if ( function_exists( 'follow_me' ) ) echo follow_me(); ?&#62;</span>
+								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'If you do not have Twitter account yet, you should create it using this link', 'twitter' ); ?> <a target="_blank" href="https://twitter.com/signup">https://twitter.com/signup</a> .</span><br />
+								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'Paste the shortcode [follow_me] into the necessary page or post to use the "Follow Me" button.', 'twitter' ); ?></span><br />
+								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'If you would like to use this button in some other place, please paste this line into the template source code', 'twitter' ); ?>	&#60;?php if ( function_exists( 'follow_me' ) ) echo follow_me(); ?&#62;</span>
 							</td>
 						</tr>
 						<tr valign="top">
 							<th scope="row" colspan="2"><?php echo __( 'Settings for the button "Twitter":', 'twitter' ); ?></th>
 						</tr>					
 						<tr>
-							<th><?php echo __( 'Turn off the button "Twitter":', 'twitter' ); ?></th>							
+							<th><?php echo __( 'Disable the button "Twitter":', 'twitter' ); ?></th>							
 							<td>
 								<input type="checkbox" name="twttr_disable" value="1" <?php if( 1 == $twttr_options_array["twttr_disable"] ) echo "checked=\"checked\""; ?> /><br />
-								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'The button "T" will not displaying. Just a shortcode [follow_me] will work.', 'twitter' ); ?></span><br />
+								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'The button "T" will not be displayed. Just the shortcode [follow_me] will work.', 'twitter' ); ?></span><br />
 							</td>
 						</tr>
 						<tr>
 							<th>
-								<?php echo __( 'Choose a position for an icon "Twitter":', 'twitter' ); ?>
+								<?php echo __( 'Choose the "Twitter" icon position:', 'twitter' ); ?>
 							</th>
 							<td>
 								<input style="margin-top:3px;" type="radio" name="twttr_position" value="1" <?php if ( $twttr_options_array['twttr_position'] == 1 ) echo 'checked="checked"'?> /> <label for="twttr_position"><?php echo __( 'Top position', 'twitter' ); ?></label><br />
 								<input style="margin-top:3px;" type="radio" name="twttr_position" value="0" <?php if ( $twttr_options_array['twttr_position'] == 0 ) echo 'checked="checked"'?> /> <label for="twttr_position"><?php echo __( 'Bottom position', 'twitter' ); ?></label><br />
-								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'When clicking this sign a user adds to their twitter page article that they liked along with a link to it.', 'twitter' ); ?></span><br />
+								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'By clicking this icon a user can add the article he/she likes to his/her Twitter page.', 'twitter' ); ?></span><br />
 							</td>
 						</tr>
 						<tr>
@@ -232,7 +232,7 @@ if(!function_exists( 'twttr_twit' ) ) {
 		if ( 0 == $twttr_options_array['twttr_disable'] ) {
 			$position = $twttr_options_array['twttr_position'];
 			$str = '<div class="twttr_button">
-					<a href="http://twitter.com/share?url='.$permalink_post.'&text='.$title_post.'" target="_blank" title="'.__( 'Click here if you liked this article.', 'twitter' ).'">
+					<a href="http://twitter.com/share?url='.$permalink_post.'&text='.$title_post.'" target="_blank" title="'.__( 'Click here if you like this article.', 'twitter' ).'">
 						<img src="'.plugins_url('images/twitt.gif', __FILE__).'" alt="Twitt" />
 					</a>
 				</div>';
