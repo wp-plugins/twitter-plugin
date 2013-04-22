@@ -47,11 +47,11 @@ If you create your own language pack or update the existing one, you can send <a
 
 = I cannot see the Twitter icon in the post after the plugin installation =
 
-1. In the WordPress admin panel go to "Plugins", find the "Twitter" plugin and click "Activate".
+In the WordPress admin panel go to "Plugins", find the "Twitter" plugin and click "Activate".
 
 = How can I deactivate the plugin =
 
-1. In the WordPress admin panel go to "Plugins", find the "Twitter" plugin and click "Deactivate".
+In the WordPress admin panel go to "Plugins", find the "Twitter" plugin and click "Deactivate".
 
 = After clicking the Twitter icon I see the Twitter Home page instead of the necessary account page =
 
@@ -61,13 +61,13 @@ If you create your own language pack or update the existing one, you can send <a
 
 = How to adjust the Twitter icon position on the page =
 
-1. In the WordPress admin panel go to "Settings", find the Twitter plugin settings page and select one of the listed positions: Top position or Bottom position. Then click "Save Changes".
+In the WordPress admin panel go to "Settings", find the Twitter plugin settings page and select one of the listed positions: Top position or Bottom position. Then click "Save Changes".
 
 = After installation and settings adjustment on the plugin settings page it is not working still =
 
-1. Please click "Save Changes". Make sure that you got the message "Options Saved".
+1. Please click "Save Changes". Make sure that you got the message "Settings Saved".
 
-2. After saving your settings you should refresh your web page where the Twitter icon should be placed.
+2. After saving your settings you should refresh the web page, where the Twitter icon should be placed.
 
 == Screenshots ==
 

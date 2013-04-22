@@ -175,10 +175,10 @@ if (!function_exists ( 'twttr_settings_page' ) ) {
 							</td>
 						</tr>
 						<tr valign="top">
-							<th scope="row" colspan="2"><?php echo __( 'Settings for the button "Twitter":', 'twitter' ); ?></th>
+							<th scope="row" colspan="2"><?php echo __( '"Twitter" button settings:', 'twitter' ); ?></th>
 						</tr>					
 						<tr>
-							<th><?php echo __( 'Disable the button "Twitter":', 'twitter' ); ?></th>							
+							<th><?php echo __( 'Disable the "Twitter" button:', 'twitter' ); ?></th>							
 							<td>
 								<input type="checkbox" name="twttr_disable" value="1" <?php if( 1 == $twttr_options_array["twttr_disable"] ) echo "checked=\"checked\""; ?> /><br />
 								<span style="color: rgb(136, 136, 136); font-size: 10px;"><?php echo __( 'The button "T" will not be displayed. Just the shortcode [follow_me] will work.', 'twitter' ); ?></span><br />
