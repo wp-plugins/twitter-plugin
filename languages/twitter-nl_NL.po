@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: twitter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-02-26 17:51+0300\n"
-"PO-Revision-Date: 2013-02-26 17:51+0300\n"
+"POT-Creation-Date: 2013-04-22 14:55+0300\n"
+"PO-Revision-Date: 2013-04-22 14:55+0300\n"
 "Last-Translator: \n"
 "Language-Team: Jan Willem <jw@ikinternet.nl>\n"
 "MIME-Version: 1.0\n"
@@ -54,12 +54,14 @@ msgid "Install now from wordpress.org"
 msgstr "Installeer van wordpress.org"
 
 #: twitter.php:102
-msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill in our contact form on our site"
+#, fuzzy
+msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill out the contact form on our website"
 msgstr "Als je vragen hebt, stuur ons een e-mail via plugin@bestwebsoft.com of gebruik het contactformulier op onze website"
 
 #: twitter.php:134
 #: twitter.php:157
-msgid "Twitter Options"
+#, fuzzy
+msgid "Twitter Settings"
 msgstr "Twitter opties"
 
 #: twitter.php:134
@@ -67,8 +69,9 @@ msgid "Twitter"
 msgstr "Twitter"
 
 #: twitter.php:153
-msgid "Options saved."
-msgstr "Opties opgeslagen"
+#, fuzzy
+msgid "Settings saved"
+msgstr "Instellingen"
 
 #: twitter.php:164
 msgid "Settings for the button \"Follow Me\":"
@@ -79,33 +82,36 @@ msgid "Enter your username:"
 msgstr "Vul uw gebruikersnaam in :"
 
 #: twitter.php:172
-msgid "If you do not have Twitter account yet you need to create it using this link"
+#, fuzzy
+msgid "If you do not have Twitter account yet, you should create it using this link"
 msgstr "Als je nog geen Twitter account hebt dan kan je er een aanmaken via de deze link"
 
 #: twitter.php:173
-msgid "Put a shortcode [follow_me] on necessary page or post to use \"Follow Me\" button."
+#, fuzzy
+msgid "Paste the shortcode [follow_me] into the necessary page or post to use the \"Follow Me\" button."
 msgstr "Gebruik de shortcode [follow_me]  op de pagina of post om de \"Follow Me\" te tonen."
 
 #: twitter.php:174
-msgid "If you would like to utilize this button in another place, please put strings below into the template source code"
+#, fuzzy
+msgid "If you would like to use this button in some other place, please paste this line into the template source code"
 msgstr "Als je deze button ergens anders wil gebruiken, plak de onderstaande code ergens in de template broncode"
 
 #: twitter.php:178
-msgid "Settings for the button \"Twitter\":"
-msgstr "Instellingen voor de knop  \"Twitter\":"
+#, fuzzy
+msgid "\"Twitter\" button settings:"
+msgstr "Опции Twitter"
 
 #: twitter.php:181
-#, fuzzy
-msgid "Turn off the button \"Twitter\":"
-msgstr "Instellingen voor de knop  \"Twitter\":"
+msgid "Disable the \"Twitter\" button:"
+msgstr ""
 
 #: twitter.php:184
-msgid "The button \"T\" will not displaying. Just a shortcode [follow_me] will work."
+msgid "The button \"T\" will not be displayed. Just the shortcode [follow_me] will work."
 msgstr ""
 
 #: twitter.php:189
-msgid "Choose a position for an icon \"Twitter\":"
-msgstr "Kies een positie voor het  \"Twitter\" logo:"
+msgid "Choose the \"Twitter\" icon position:"
+msgstr ""
 
 #: twitter.php:192
 msgid "Top position"
@@ -116,7 +122,8 @@ msgid "Bottom position"
 msgstr "Onderaan gepositioneerd"
 
 #: twitter.php:194
-msgid "When clicking this sign a user adds to their twitter page article that they liked along with a link to it."
+#, fuzzy
+msgid "By clicking this icon a user can add the article he/she likes to his/her Twitter page."
 msgstr "Als een bezoeker hierop klikt dan wordt Twitter geopend en kan men het artikel en link delen."
 
 #: twitter.php:199
@@ -124,7 +131,8 @@ msgid "Save Changes"
 msgstr "Instellingen opslaan"
 
 #: twitter.php:235
-msgid "Click here if you liked this article."
+#, fuzzy
+msgid "Click here if you like this article."
 msgstr "Klik hier als je dit artikel leuk vindt"
 
 #: twitter.php:267
@@ -135,10 +143,18 @@ msgstr "FAQ"
 msgid "Support"
 msgstr "Ondersteuning"
 
+#~ msgid "Options saved."
+#~ msgstr "Opties opgeslagen"
+#~ msgid "Settings for the button \"Twitter\":"
+#~ msgstr "Instellingen voor de knop  \"Twitter\":"
+
+#, fuzzy
+#~ msgid "Turn off the button \"Twitter\":"
+#~ msgstr "Instellingen voor de knop  \"Twitter\":"
+#~ msgid "Choose a position for an icon \"Twitter\":"
+#~ msgstr "Kies een positie voor het  \"Twitter\" logo:"
 #~ msgid "BWS Plugins"
 #~ msgstr "Плагины BWS"
 #~ msgid "Install Now"
 #~ msgstr "Установить сейчас"
-#~ msgid "Twitter options"
-#~ msgstr "Опции Twitter"
 

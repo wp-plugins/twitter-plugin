@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: twitter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-17 10:26+0300\n"
-"PO-Revision-Date: 2013-04-17 10:26+0300\n"
+"POT-Creation-Date: 2013-04-22 14:55+0300\n"
+"PO-Revision-Date: 2013-04-22 14:57+0300\n"
 "Last-Translator: \n"
 "Language-Team: bestwebsoft.com <plugin@bestwebsoft.com>\n"
 "MIME-Version: 1.0\n"
@@ -91,11 +91,11 @@ msgid "If you would like to use this button in some other place, please paste th
 msgstr "Если вы хотите использовать данную кнопку в другом месте, пожалуйста, добавьте данную строку в код нужного темплейта"
 
 #: twitter.php:178
-msgid "Settings for the button \"Twitter\":"
-msgstr "Настройки для кнопки \"Twitter\":"
+msgid "\"Twitter\" button settings:"
+msgstr "Настройки кнопки \"Twitter\":"
 
 #: twitter.php:181
-msgid "Disable the button \"Twitter\":"
+msgid "Disable the \"Twitter\" button:"
 msgstr "Отключить кнопку \"Twitter\":"
 
 #: twitter.php:184
@@ -134,6 +134,8 @@ msgstr "FAQ"
 msgid "Support"
 msgstr "Поддержка"
 
+#~ msgid "Settings for the button \"Twitter\":"
+#~ msgstr "Настройки для кнопки \"Twitter\":"
 #~ msgid "BWS Plugins"
 #~ msgstr "Плагины BWS"
 #~ msgid "Install Now"
