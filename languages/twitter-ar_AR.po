@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: twitter\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-22 14:54+0300\n"
-"PO-Revision-Date: 2013-04-22 14:54+0300\n"
+"POT-Creation-Date: 2013-04-30 10:59+0300\n"
+"PO-Revision-Date: 2013-04-30 10:59+0300\n"
 "Last-Translator: \n"
 "Language-Team: Albayan Design Hani Aladoli <info@albayan-design.com>\n"
 "MIME-Version: 1.0\n"
@@ -27,8 +27,8 @@ msgid "Read more"
 msgstr "اقراء المزيد"
 
 #: twitter.php:84
-#: twitter.php:257
-#: twitter.php:266
+#: twitter.php:376
+#: twitter.php:385
 msgid "Settings"
 msgstr "الاعدادت "
 
@@ -58,88 +58,132 @@ msgstr "نزلها الان من wordpress.org"
 msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill out the contact form on our website"
 msgstr "اذا كان لديك اي استفسار او سؤال الرجاء الاتصال بنا عبر بريدنا الالكتروني :  contact us via plugin@bestwebsoft.com  , او المراسلة الفورية من واجهة الاتصال بنا علي موقعنا الخاص"
 
-#: twitter.php:134
-#: twitter.php:157
+#: twitter.php:137
+#: twitter.php:215
 #, fuzzy
 msgid "Twitter Settings"
 msgstr "خيارات التويتر"
 
-#: twitter.php:134
+#: twitter.php:137
 msgid "Twitter"
 msgstr "التويتر"
 
-#: twitter.php:153
+#: twitter.php:168
 #, fuzzy
 msgid "Settings saved"
 msgstr "الاعدادت "
 
-#: twitter.php:164
+#: twitter.php:190
+msgid "Error: File size > 32K"
+msgstr ""
+
+#: twitter.php:192
+msgid "Error: Invalid file type"
+msgstr ""
+
+#: twitter.php:200
+msgid "Error: moving file failed"
+msgstr ""
+
+#: twitter.php:203
+msgid "Error: check image width or height"
+msgstr ""
+
+#: twitter.php:207
+msgid "Uploading Error: check image properties"
+msgstr ""
+
+#: twitter.php:222
 msgid "Settings for the button \"Follow Me\":"
 msgstr "اعدادات زر \"Follow Me\":"
 
-#: twitter.php:168
+#: twitter.php:226
 msgid "Enter your username:"
 msgstr "اكتب اسم المستخدم :"
 
-#: twitter.php:172
+#: twitter.php:230
 #, fuzzy
 msgid "If you do not have Twitter account yet, you should create it using this link"
 msgstr "اذا كنت لا تملك حساب علي التويتر يمكنك انشاء حساب جديد عبر هذه الرابط"
 
-#: twitter.php:173
+#: twitter.php:231
 #, fuzzy
 msgid "Paste the shortcode [follow_me] into the necessary page or post to use the \"Follow Me\" button."
 msgstr "ضع هذه الكود [follow_me]في الصفحات المطلوبه او في المواضيع  \"Follow Me\" زر."
 
-#: twitter.php:174
+#: twitter.php:232
 #, fuzzy
 msgid "If you would like to use this button in some other place, please paste this line into the template source code"
 msgstr "إذا كنت ترغب في الاستفادة من هذا الزر في مكان آخر، يرجي وضع الاعدادات في الاسفل ( مربع الكود )"
 
-#: twitter.php:178
+#: twitter.php:237
+msgid "Choose display settings:"
+msgstr ""
+
+#: twitter.php:241
+msgid "Standard button"
+msgstr ""
+
+#: twitter.php:243
+msgid "Custom button"
+msgstr ""
+
+#: twitter.php:253
+msgid "Current image:"
+msgstr ""
+
+#: twitter.php:261
+msgid "\"Follow Me\" image:"
+msgstr ""
+
+#: twitter.php:267
+msgid "Image properties: max image width:100px; max image height:100px; max image size:32Kb; image types:\"jpg\", \"jpeg\"."
+msgstr ""
+
+#: twitter.php:274
 #, fuzzy
 msgid "\"Twitter\" button settings:"
 msgstr "Опции Twitter"
 
-#: twitter.php:181
+#: twitter.php:277
 msgid "Disable the \"Twitter\" button:"
 msgstr ""
 
-#: twitter.php:184
+#: twitter.php:280
 msgid "The button \"T\" will not be displayed. Just the shortcode [follow_me] will work."
 msgstr ""
 
-#: twitter.php:189
+#: twitter.php:285
 msgid "Choose the \"Twitter\" icon position:"
 msgstr ""
 
-#: twitter.php:192
+#: twitter.php:288
 msgid "Top position"
 msgstr "في الاعلي "
 
-#: twitter.php:193
+#: twitter.php:289
 msgid "Bottom position"
 msgstr "في الاسفل"
 
-#: twitter.php:194
+#: twitter.php:290
 #, fuzzy
 msgid "By clicking this icon a user can add the article he/she likes to his/her Twitter page."
 msgstr "عند النقر على هذا العلامة على أن يضيف المستخدم إلى صفحة مقالتهم في تويتر مع روابطها"
 
-#: twitter.php:199
+#: twitter.php:296
 msgid "Save Changes"
 msgstr "حفظ الاعدادت"
 
-#: twitter.php:235
+#: twitter.php:354
 #, fuzzy
 msgid "Click here if you like this article."
 msgstr "اضغط هنا اذا اعجبك هذه المقال"
 
-#: twitter.php:267
+#: twitter.php:386
 msgid "FAQ"
 msgstr "أسئلة وأجوبة"
 
-#: twitter.php:268
+#: twitter.php:387
 msgid "Support"
 msgstr "الدعم"
 

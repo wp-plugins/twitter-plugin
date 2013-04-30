@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Twitter Plugin v2.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-22 14:54+0300\n"
-"PO-Revision-Date: 2013-04-22 14:54+0300\n"
+"POT-Creation-Date: 2013-04-30 10:59+0300\n"
+"PO-Revision-Date: 2013-04-30 10:59+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -32,8 +32,8 @@ msgstr "קרא עוד"
 
 # @ twitter
 #: twitter.php:84
-#: twitter.php:257
-#: twitter.php:266
+#: twitter.php:376
+#: twitter.php:385
 msgid "Settings"
 msgstr "הגדרות"
 
@@ -70,101 +70,145 @@ msgid "If you have any questions, please contact us via plugin@bestwebsoft.com o
 msgstr "אם יש לך שאלות כלשהן, אנא צור עמנו קשר דרך plugin@bestwebsoft.com או שתמלא את טופס יצירת הקשר שבאתר שלנו"
 
 # @ twitter
-#: twitter.php:134
-#: twitter.php:157
+#: twitter.php:137
+#: twitter.php:215
 #, fuzzy
 msgid "Twitter Settings"
 msgstr "אפשרויות טוויטר"
 
 # @ twitter
-#: twitter.php:134
+#: twitter.php:137
 msgid "Twitter"
 msgstr "טוויטר"
 
 # @ twitter
-#: twitter.php:153
+#: twitter.php:168
 #, fuzzy
 msgid "Settings saved"
 msgstr "הגדרות"
 
+#: twitter.php:190
+msgid "Error: File size > 32K"
+msgstr ""
+
+#: twitter.php:192
+msgid "Error: Invalid file type"
+msgstr ""
+
+#: twitter.php:200
+msgid "Error: moving file failed"
+msgstr ""
+
+#: twitter.php:203
+msgid "Error: check image width or height"
+msgstr ""
+
+#: twitter.php:207
+msgid "Uploading Error: check image properties"
+msgstr ""
+
 # @ twitter
-#: twitter.php:164
+#: twitter.php:222
 msgid "Settings for the button \"Follow Me\":"
 msgstr "הגדרות עבור הכפתור \"עקוב אחרי\":"
 
 # @ twitter
-#: twitter.php:168
+#: twitter.php:226
 msgid "Enter your username:"
 msgstr "הזן את שם המשתמש שלך:"
 
 # @ twitter
-#: twitter.php:172
+#: twitter.php:230
 #, fuzzy
 msgid "If you do not have Twitter account yet, you should create it using this link"
 msgstr "אם אין לך עדיין חשבון טוויטר, אתה יכול ליצור אותו דרך קישור זה"
 
 # @ twitter
-#: twitter.php:173
+#: twitter.php:231
 #, fuzzy
 msgid "Paste the shortcode [follow_me] into the necessary page or post to use the \"Follow Me\" button."
 msgstr "שים את קיצור הקוד [follow_me] בכל דף או פוסט בו אתה רוצה להשתמש בכפתור \"עקוב אחרי\"."
 
 # @ twitter
-#: twitter.php:174
+#: twitter.php:232
 #, fuzzy
 msgid "If you would like to use this button in some other place, please paste this line into the template source code"
 msgstr "אם תרצה להשתמש בכפתור הזה במקום אחר, בבקשה הזן את המחרוזות שלהלן אל קוד המקור של התבנית"
 
-#: twitter.php:178
+#: twitter.php:237
+msgid "Choose display settings:"
+msgstr ""
+
+#: twitter.php:241
+msgid "Standard button"
+msgstr ""
+
+#: twitter.php:243
+msgid "Custom button"
+msgstr ""
+
+#: twitter.php:253
+msgid "Current image:"
+msgstr ""
+
+#: twitter.php:261
+msgid "\"Follow Me\" image:"
+msgstr ""
+
+#: twitter.php:267
+msgid "Image properties: max image width:100px; max image height:100px; max image size:32Kb; image types:\"jpg\", \"jpeg\"."
+msgstr ""
+
+#: twitter.php:274
 msgid "\"Twitter\" button settings:"
 msgstr ""
 
-#: twitter.php:181
+#: twitter.php:277
 msgid "Disable the \"Twitter\" button:"
 msgstr ""
 
-#: twitter.php:184
+#: twitter.php:280
 msgid "The button \"T\" will not be displayed. Just the shortcode [follow_me] will work."
 msgstr ""
 
-#: twitter.php:189
+#: twitter.php:285
 msgid "Choose the \"Twitter\" icon position:"
 msgstr ""
 
 # @ twitter
-#: twitter.php:192
+#: twitter.php:288
 msgid "Top position"
 msgstr "למעלה"
 
 # @ twitter
-#: twitter.php:193
+#: twitter.php:289
 msgid "Bottom position"
 msgstr "למטה"
 
 # @ twitter
-#: twitter.php:194
+#: twitter.php:290
 #, fuzzy
 msgid "By clicking this icon a user can add the article he/she likes to his/her Twitter page."
 msgstr "כאשר משתמש לוחץ על סמל זה, הוא מוסיף לטוויטר שלו את המאמר שאהב עם קישור אליו."
 
 # @ default
-#: twitter.php:199
+#: twitter.php:296
 msgid "Save Changes"
 msgstr "שמור שינויים"
 
 # @ twitter
-#: twitter.php:235
+#: twitter.php:354
 #, fuzzy
 msgid "Click here if you like this article."
 msgstr "אם אהבת את המאמר לחץ כאן."
 
 # @ twitter
-#: twitter.php:267
+#: twitter.php:386
 msgid "FAQ"
 msgstr "שאלות ותשובות"
 
 # @ twitter
-#: twitter.php:268
+#: twitter.php:387
 msgid "Support"
 msgstr "תמיכה"
 

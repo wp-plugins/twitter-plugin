@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 2.9
 Tested up to: 3.5.1
-Stable tag: 2.23
+Stable tag: 2.24
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,7 @@ Twitter plugin allows you to add the Follow button the easiest way.
 * Actions: Add a Twitter "Follow" button easily.
 * Actions: Add a Twitter "Like" button the easiest way.
 * Display: This plugin allows you to choose the button position - top, bottom.
+* Display: Use a standard button with the number of followers or replace it with some custom image.
 
 = Translation =
 
@@ -79,6 +80,9 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 6. Shortcode settings.
 
 == Changelog ==
+
+= V2.24 - 30.04.2013 =
+* NEW : Select the button: the standard button with the number of followers or custom image.
 
 = V2.23 - 17.04.2013 =
 * Update : The English language file is updated in the plugin.
@@ -172,6 +176,9 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 * Ability to install Twitter icon with a link to the account page, including adjustment functionality settings via WordPress admin panel are added.
 
 == Upgrade Notice ==
+
+= V2.24 =
+Select the button: the standard button with the number of followers or custom image.
 
 = V2.23 =
 The English language is updated in the plugin.
