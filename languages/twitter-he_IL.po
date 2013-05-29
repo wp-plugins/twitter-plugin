@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Twitter Plugin v2.13\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-30 10:59+0300\n"
-"PO-Revision-Date: 2013-04-30 10:59+0300\n"
+"POT-Creation-Date: 2013-05-29 10:31+0300\n"
+"PO-Revision-Date: 2013-05-29 10:31+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -19,196 +19,226 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 # @ twitter
-#: twitter.php:82
+#: twitter.php:102
+#, fuzzy
+msgid "Pro plugins"
+msgstr "תוספים מומלצים"
+
+# @ twitter
+#: twitter.php:105
+#: twitter.php:131
 msgid "Activated plugins"
 msgstr "תוספים פעילים"
 
 # @ twitter
-#: twitter.php:84
-#: twitter.php:92
-#: twitter.php:100
+#: twitter.php:107
+#: twitter.php:115
+#: twitter.php:123
+#: twitter.php:133
+#: twitter.php:141
+#: twitter.php:149
 msgid "Read more"
 msgstr "קרא עוד"
 
 # @ twitter
-#: twitter.php:84
-#: twitter.php:376
-#: twitter.php:385
+#: twitter.php:107
+#: twitter.php:133
+#: twitter.php:424
+#: twitter.php:433
 msgid "Settings"
 msgstr "הגדרות"
 
 # @ twitter
-#: twitter.php:90
+#: twitter.php:113
+#: twitter.php:139
 msgid "Installed plugins"
 msgstr "תוספים מותקנים"
 
 # @ twitter
-#: twitter.php:98
+#: twitter.php:121
+#: twitter.php:147
 msgid "Recommended plugins"
 msgstr "תוספים מומלצים"
 
+#: twitter.php:123
+msgid "Purchase"
+msgstr ""
+
 # @ twitter
-#: twitter.php:100
+#: twitter.php:128
+#, fuzzy
+msgid "Free plugins"
+msgstr "תוספים מומלצים"
+
+# @ twitter
+#: twitter.php:149
 msgid "Download"
 msgstr "הורד"
 
 # @ default
-#: twitter.php:100
+#: twitter.php:149
 #, php-format
 msgid "Install %s"
 msgstr "התקן %s"
 
 # @ twitter
-#: twitter.php:100
+#: twitter.php:149
 msgid "Install now from wordpress.org"
 msgstr "התקן כעת מ wordpress.org"
 
-# @ twitter
-#: twitter.php:102
-#, fuzzy
-msgid "If you have any questions, please contact us via plugin@bestwebsoft.com or fill out the contact form on our website"
-msgstr "אם יש לך שאלות כלשהן, אנא צור עמנו קשר דרך plugin@bestwebsoft.com או שתמלא את טופס יצירת הקשר שבאתר שלנו"
+#: twitter.php:154
+msgid "If you have any questions, please contact us via"
+msgstr ""
 
 # @ twitter
-#: twitter.php:137
-#: twitter.php:215
+#: twitter.php:185
+#: twitter.php:263
 #, fuzzy
 msgid "Twitter Settings"
 msgstr "אפשרויות טוויטר"
 
 # @ twitter
-#: twitter.php:137
+#: twitter.php:185
 msgid "Twitter"
 msgstr "טוויטר"
 
 # @ twitter
-#: twitter.php:168
+#: twitter.php:216
 #, fuzzy
 msgid "Settings saved"
 msgstr "הגדרות"
 
-#: twitter.php:190
+#: twitter.php:238
 msgid "Error: File size > 32K"
 msgstr ""
 
-#: twitter.php:192
+#: twitter.php:240
 msgid "Error: Invalid file type"
 msgstr ""
 
-#: twitter.php:200
+#: twitter.php:248
 msgid "Error: moving file failed"
 msgstr ""
 
-#: twitter.php:203
+#: twitter.php:251
 msgid "Error: check image width or height"
 msgstr ""
 
-#: twitter.php:207
+#: twitter.php:255
 msgid "Uploading Error: check image properties"
 msgstr ""
 
 # @ twitter
-#: twitter.php:222
+#: twitter.php:270
 msgid "Settings for the button \"Follow Me\":"
 msgstr "הגדרות עבור הכפתור \"עקוב אחרי\":"
 
 # @ twitter
-#: twitter.php:226
+#: twitter.php:274
 msgid "Enter your username:"
 msgstr "הזן את שם המשתמש שלך:"
 
 # @ twitter
-#: twitter.php:230
+#: twitter.php:278
 #, fuzzy
 msgid "If you do not have Twitter account yet, you should create it using this link"
 msgstr "אם אין לך עדיין חשבון טוויטר, אתה יכול ליצור אותו דרך קישור זה"
 
 # @ twitter
-#: twitter.php:231
+#: twitter.php:279
 #, fuzzy
 msgid "Paste the shortcode [follow_me] into the necessary page or post to use the \"Follow Me\" button."
 msgstr "שים את קיצור הקוד [follow_me] בכל דף או פוסט בו אתה רוצה להשתמש בכפתור \"עקוב אחרי\"."
 
 # @ twitter
-#: twitter.php:232
+#: twitter.php:280
 #, fuzzy
 msgid "If you would like to use this button in some other place, please paste this line into the template source code"
 msgstr "אם תרצה להשתמש בכפתור הזה במקום אחר, בבקשה הזן את המחרוזות שלהלן אל קוד המקור של התבנית"
 
-#: twitter.php:237
+#: twitter.php:285
 msgid "Choose display settings:"
 msgstr ""
 
-#: twitter.php:241
+#: twitter.php:289
 msgid "Standard button"
 msgstr ""
 
-#: twitter.php:243
+#: twitter.php:291
 msgid "Custom button"
 msgstr ""
 
-#: twitter.php:253
+#: twitter.php:301
 msgid "Current image:"
 msgstr ""
 
-#: twitter.php:261
+#: twitter.php:309
 msgid "\"Follow Me\" image:"
 msgstr ""
 
-#: twitter.php:267
+#: twitter.php:315
 msgid "Image properties: max image width:100px; max image height:100px; max image size:32Kb; image types:\"jpg\", \"jpeg\"."
 msgstr ""
 
-#: twitter.php:274
+#: twitter.php:322
 msgid "\"Twitter\" button settings:"
 msgstr ""
 
-#: twitter.php:277
+#: twitter.php:325
 msgid "Disable the \"Twitter\" button:"
 msgstr ""
 
-#: twitter.php:280
+#: twitter.php:328
 msgid "The button \"T\" will not be displayed. Just the shortcode [follow_me] will work."
 msgstr ""
 
-#: twitter.php:285
+#: twitter.php:333
 msgid "Choose the \"Twitter\" icon position:"
 msgstr ""
 
 # @ twitter
-#: twitter.php:288
+#: twitter.php:336
 msgid "Top position"
 msgstr "למעלה"
 
 # @ twitter
-#: twitter.php:289
+#: twitter.php:337
 msgid "Bottom position"
 msgstr "למטה"
 
 # @ twitter
-#: twitter.php:290
+#: twitter.php:338
 #, fuzzy
 msgid "By clicking this icon a user can add the article he/she likes to his/her Twitter page."
 msgstr "כאשר משתמש לוחץ על סמל זה, הוא מוסיף לטוויטר שלו את המאמר שאהב עם קישור אליו."
 
 # @ default
-#: twitter.php:296
+#: twitter.php:344
 msgid "Save Changes"
 msgstr "שמור שינויים"
 
 # @ twitter
-#: twitter.php:354
+#: twitter.php:402
 #, fuzzy
 msgid "Click here if you like this article."
 msgstr "אם אהבת את המאמר לחץ כאן."
 
 # @ twitter
-#: twitter.php:386
+#: twitter.php:434
 msgid "FAQ"
 msgstr "שאלות ותשובות"
 
 # @ twitter
-#: twitter.php:387
+#: twitter.php:435
 msgid "Support"
 msgstr "תמיכה"
+
+# @ twitter
+#, fuzzy
+#~ msgid ""
+#~ "If you have any questions, please contact us via plugin@bestwebsoft.com "
+#~ "or fill out the contact form on our website"
+#~ msgstr ""
+#~ "אם יש לך שאלות כלשהן, אנא צור עמנו קשר דרך plugin@bestwebsoft.com או "
+#~ "שתמלא את טופס יצירת הקשר שבאתר שלנו"
 

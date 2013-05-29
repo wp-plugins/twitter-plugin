@@ -4,7 +4,7 @@ Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 2.9
 Tested up to: 3.5.1
-Stable tag: 2.24
+Stable tag: 2.25
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ Add a Twitter "Follow" button to your WordPress website.
 Twitter plugin allows you to add the Follow button the easiest way.
 
 <a href="http://wordpress.org/extend/plugins/twitter-plugin/faq/" target="_blank">FAQ</a>
-<a href="http://bestwebsoft.com/plugin/twitter-plugin/" target="_blank">Support</a>
+<a href="http://support.bestwebsoft.com" target="_blank">Support</a>
 
 = Features =
 
@@ -27,7 +27,7 @@ Twitter plugin allows you to add the Follow button the easiest way.
 = Translation =
 
 * Arabic (ar_AR) (thanks to Albayan Design Hani Aladoli)
-* Danish (da_DK) (thanks to <a href="admin@artikelforlaget.dk">Tom</a>, www.artikelforlaget.dk)
+* Danish (da_DK) (thanks to <a href="mailto:admin@artikelforlaget.dk">Tom</a>, www.artikelforlaget.dk)
 * Dutch (nl_NL) (thanks to <a href="mailto:jan-willem.jwr.wilmsen@essent.nl">Jan-Willem</a>, www.directic.nl)
 * Hebrew (he_IL) (thanks to Sagive SEO)
 * Italian (it_IT) (thanks to Manuel)
@@ -36,7 +36,7 @@ Twitter plugin allows you to add the Follow button the easiest way.
 * Spanish (es_ES)(thanks to <a href="mailto:mrjosefernando@gmail.com">Fernando De León</a>)
 * Ukrainian (uk) (thanks to Cmd Soft, www.cmd-soft.com)
 
-If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://bestwebsoft.com/" target="_blank">BWS</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BWS</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 == Installation ==
 
@@ -80,6 +80,10 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 6. Shortcode settings.
 
 == Changelog ==
+
+= V2.25 - 29.05.2013 =
+* Update : BWS plugins section is updated.
+* Update : The Danish language file is updated.
 
 = V2.24 - 30.04.2013 =
 * NEW : Select the button: the standard button with the number of followers or custom image.
@@ -176,6 +180,9 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 * Ability to install Twitter icon with a link to the account page, including adjustment functionality settings via WordPress admin panel are added.
 
 == Upgrade Notice ==
+
+= V2.25 =
+BWS plugins section is updated. The Danish language file is updated.
 
 = V2.24 =
 Select the button: the standard button with the number of followers or custom image.
