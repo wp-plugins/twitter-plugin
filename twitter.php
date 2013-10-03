@@ -4,13 +4,13 @@ Plugin Name: Twitter Plugin
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.27
+Version: 2.28
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
 
 /*
-	 Copyright 2011  BestWebSoft  ( http://support.bestwebsoft.com )
+	@ Copyright 2011  BestWebSoft  ( http://support.bestwebsoft.com )
 	
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as 
@@ -43,7 +43,7 @@ if ( !function_exists ( 'twttr_add_pages' ) ) {
 // Register settings for plugin
 if ( ! function_exists( 'twttr_settings' ) ) {
 	function twttr_settings() {
-		global $twttr_options_array;
+		global $wpmu, $twttr_options_array;
 
 		$twttr_options_array_defaults = array(
 			'twttr_url_twitter' 	=> 'admin',
@@ -54,10 +54,22 @@ if ( ! function_exists( 'twttr_settings' ) ) {
 			'twttr_disable' 		=> '0'
 		);
 
-		if ( ! get_option( 'twttr_options_array' ) )
-			add_option( 'twttr_options_array', $twttr_options_array_defaults, '', 'yes' );
+		// install the option defaults
+		if ( 1 == $wpmu ) {
+			if ( !get_site_option( 'twttr_options_array' ) ) {
+				add_site_option( 'twttr_options_array', $twttr_options_array_defaults, '', 'yes' );
+			}
+		} else {
+			if( !get_option( 'twttr_options_array' ) )
+				add_option( 'twttr_options_array', $twttr_options_array_defaults, '', 'yes' );
+		}
 
-		$twttr_options_array = get_option( 'twttr_options_array' );
+		// get options from the database
+		if ( 1 == $wpmu )
+			$twttr_options_array = get_site_option( 'twttr_options_array' ); // get options from the database
+		else
+			$twttr_options_array = get_option( 'twttr_options_array' );// get options from the database
+
 		$twttr_options_array = array_merge( $twttr_options_array_defaults, $twttr_options_array );
 	}
 }

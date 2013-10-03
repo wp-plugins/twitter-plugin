@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 3.0
-Tested up to: 3.6
-Stable tag: 2.27
+Tested up to: 3.6.1
+Stable tag: 2.28
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,7 +34,7 @@ Twitter plugin allows you to add the Follow button the easiest way.
 * Russian (ru_RU)
 * Slovak (sk_SK) (thanks to Branco Radenovich)
 * Spanish (es_ES)(thanks to <a href="mailto:mrjosefernando@gmail.com">Fernando De León</a>)
-* Ukrainian (uk) (thanks to Cmd Soft, www.cmd-soft.com)
+* Ukrainian (uk)
 
 If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
@@ -80,6 +80,10 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 6. Shortcode settings.
 
 == Changelog ==
+
+= V2.28 - 02.10.2013 =
+* Update : We updated all functionality for wordpress 3.6.1.
+* Update : The Ukrainian language file is added to the plugin.
 
 = V2.27 - 04.09.2013 =
 * Update : We updated all functionality for wordpress 3.6.
@@ -188,6 +192,9 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 * Ability to install Twitter icon with a link to the account page, including adjustment functionality settings via WordPress admin panel are added.
 
 == Upgrade Notice ==
+
+= V2.28 =
+We updated all functionality for wordpress 3.6.1. The Ukrainian language file is added to the plugin.
 
 = V2.27 =
 We updated all functionality for wordpress 3.6. Function for displaying BWS plugins section placed in a separate file and has own language files.
