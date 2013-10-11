@@ -1,10 +1,10 @@
-﻿=== Twitter Plugin ===
+﻿=== Twitter ===
 Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 3.0
 Tested up to: 3.6.1
-Stable tag: 2.28
+Stable tag: 2.29
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,9 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 6. Shortcode settings.
 
 == Changelog ==
+
+= V2.29 - 11.10.2013 =
+* Bugfix : We fixed the bug of displaying button when post title has special characters.
 
 = V2.28 - 02.10.2013 =
 * Update : We updated all functionality for wordpress 3.6.1.
@@ -192,6 +195,9 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 * Ability to install Twitter icon with a link to the account page, including adjustment functionality settings via WordPress admin panel are added.
 
 == Upgrade Notice ==
+
+= V2.29 =
+We fixed the bug of displaying button when post title has special characters.
 
 = V2.28 =
 We updated all functionality for wordpress 3.6.1. The Ukrainian language file is added to the plugin.

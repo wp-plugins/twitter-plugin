@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Twitter Plugin
+Plugin Name: Twitter
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.28
+Version: 2.29
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -275,7 +275,7 @@ if ( !function_exists( 'twttr_twit' ) ) {
 	function twttr_twit( $content ) {
 		global $post, $twttr_options_array;
 		$permalink_post = get_permalink($post->ID);
-		$title_post = $post->post_title;
+		$title_post = htmlspecialchars($post->post_title);
 		if ( $title_post == 'your-post-page-title' )
 			return $content;
 
