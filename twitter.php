@@ -4,7 +4,7 @@ Plugin Name: Twitter
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.30
+Version: 2.31
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -33,9 +33,6 @@ if ( ! function_exists ( 'twttr_add_pages' ) ) {
 	function twttr_add_pages() {
 		add_menu_page( 'BWS Plugins', 'BWS Plugins', 'manage_options', 'bws_plugins', 'bws_add_menu_render', plugins_url( 'images/px.png', __FILE__ ), 1001 );
 		add_submenu_page( 'bws_plugins', __( 'Twitter Settings', 'twitter' ), __( 'Twitter', 'twitter' ), 'manage_options', 'twitter.php', 'twttr_settings_page' );
-
-		/* Call register settings function */
-		add_action( 'admin_init', 'twttr_settings' );
 	}
 }
 
@@ -375,6 +372,8 @@ if ( ! function_exists( 'twttr_delete_options' ) ) {
 
 add_action( 'admin_menu', 'twttr_add_pages' );
 add_action( 'init', 'twttr_plugin_init' );
+/* Call register settings function */
+add_action( 'init', 'twttr_settings' );
 add_action( 'admin_init', 'twttr_plugin_version_check' );
 add_action( 'admin_enqueue_scripts', 'twttr_admin_head' );
 add_action( 'wp_enqueue_scripts', 'twttr_admin_head' );
