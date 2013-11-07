@@ -14,7 +14,7 @@
 	background: url("../images/icon_36_b.png") no-repeat scroll left top transparent;
 }
 #toplevel_page_bws_plugins .wp-submenu .wp-first-item {
-	display:none;
+	display: none;
 }
 .bws_system_info_meta_box {
     width: 850px;
@@ -37,9 +37,6 @@
 }
 
 .twttr_button {
-	clear:both;
-	margin-bottom:5px;
-}
-.twttr_follow {
-
+	clear: both;
+	margin-bottom: 5px;
 }

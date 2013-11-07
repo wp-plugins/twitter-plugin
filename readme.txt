@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 3.0
-Tested up to: 3.6.1
-Stable tag: 2.29
+Tested up to: 3.7.1
+Stable tag: 2.30
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ Add a Twitter "Follow" button to your WordPress website.
 
 Twitter plugin allows you to add the Follow button the easiest way.
 
-<a href="http://wordpress.org/extend/plugins/twitter-plugin/faq/" target="_blank">FAQ</a>
+<a href="http://wordpress.org/plugins/twitter-plugin/faq/" target="_blank">FAQ</a>
 <a href="http://support.bestwebsoft.com" target="_blank">Support</a>
 
 = Features =
@@ -23,6 +23,13 @@ Twitter plugin allows you to add the Follow button the easiest way.
 * Actions: Add a Twitter "Like" button the easiest way.
 * Display: This plugin allows you to choose the button position - top, bottom.
 * Display: Use a standard button with the number of followers or replace it with some custom image.
+
+= Recommended Plugins =
+
+The author of the Twitter also recommends the following plugins:
+
+* <a href="http://wordpress.org/plugins/updater/">Updater</a> - This plugin updates WordPress core and the plugins to the recent versions. You can also use the auto mode or manual mode for updating and set email notifications.
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/updater-pro/?k=4e3cbf90f06b1a8d47346da9a8ea106b">Updater Pro</a> with more useful features available. It allows to update plugins and WordPress core on several websites. It can make backup of all your files and database before updating.
 
 = Translation =
 
@@ -80,6 +87,12 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 6. Shortcode settings.
 
 == Changelog ==
+
+= V2.30 - 07.11.2013 =
+* NEW : Add checking installed wordpress version.
+* Update : We updated all functionality for wordpress 3.7.1.
+* Update : Activation of radio button or checkbox by clicking on its label.
+* Update : Screenshots are updated.
 
 = V2.29 - 11.10.2013 =
 * Bugfix : We fixed the bug of displaying button when post title has special characters.
@@ -195,6 +208,9 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 * Ability to install Twitter icon with a link to the account page, including adjustment functionality settings via WordPress admin panel are added.
 
 == Upgrade Notice ==
+
+= V2.30 =
+Add checking installed wordpress version. We updated all functionality for wordpress 3.7.1. Activation of radio button or checkbox by clicking on its label. Screenshots are updated.
 
 = V2.29 =
 We fixed the bug of displaying button when post title has special characters.
