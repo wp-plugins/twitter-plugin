@@ -29,7 +29,7 @@ Twitter plugin allows you to add the Follow button the easiest way.
 The author of the Twitter also recommends the following plugins:
 
 * <a href="http://wordpress.org/plugins/updater/">Updater</a> - This plugin updates WordPress core and the plugins to the recent versions. You can also use the auto mode or manual mode for updating and set email notifications.
-There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/updater-pro/?k=4e3cbf90f06b1a8d47346da9a8ea106b">Updater Pro</a> with more useful features available. It allows to update plugins and WordPress core on several websites. It can make backup of all your files and database before updating.
+There is also a premium version of the plugin <a href="http://bestwebsoft.com/plugin/updater-pro/?k=4e3cbf90f06b1a8d47346da9a8ea106b">Updater Pro</a> with more useful features available. It can make backup of all your files and database before updating. Also it can forbid some plugins or WordPress Core update.
 
 = Translation =
 
@@ -81,7 +81,7 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 
 1. Settings to place the Twitter icon below the content.
 2. Display the Twitter icon below the content.
-3. Place the Twitter icon above the content.
+3. Settings to place the Twitter icon above the content.
 4. Display the Twitter icon above the content.
 5. Display on the page.
 6. Shortcode settings.
