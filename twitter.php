@@ -4,7 +4,7 @@ Plugin Name: Twitter
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.31
+Version: 2.32
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -39,7 +39,13 @@ if ( ! function_exists ( 'twttr_add_pages' ) ) {
 /* Register settings for plugin */
 if ( ! function_exists( 'twttr_settings' ) ) {
 	function twttr_settings() {
-		global $wpmu, $twttr_options;
+		global $wpmu, $twttr_options, $bws_plugin_info;
+
+		if ( function_exists( 'get_plugin_data' ) && ( ! isset( $bws_plugin_info ) || empty( $bws_plugin_info ) ) ) {
+			$plugin_info = get_plugin_data( __FILE__ );	
+			$bws_plugin_info = array( 'id' => '76', 'version' => $plugin_info["Version"] );
+		}
+
 		$twttr_options_default = array(
 			'url_twitter' 		=>	'admin',
 			'display_option'	=>	'custom',
@@ -53,7 +59,7 @@ if ( ! function_exists( 'twttr_settings' ) ) {
 			if ( ! get_site_option( 'twttr_options' ) ) {
 				if ( false !== get_site_option( 'twttr_options_array' ) ) {
 					$old_options = get_site_option( 'twttr_options_array' );
-					foreach ( $fcbk_bttn_plgn_options_default as $key => $value ) {
+					foreach ( $twttr_options_default as $key => $value ) {
 						if ( isset( $old_options['twttr_' . $key] ) )
 							$twttr_options_default[$key] = $old_options['twttr_' . $key];
 					}
@@ -155,9 +161,10 @@ if ( ! function_exists( 'twttr_settings_page' ) ) {
 			<div class="icon32 icon32-bws" id="icon-options-general"></div>
 			<h2><?php echo __( "Twitter Settings", 'twitter' ); ?></h2>
 			<div class="updated fade" <?php if ( empty( $message ) || "" != $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $message; ?></strong></p></div>
+			<div id="twttr_settings_notice" class="updated fade" style="display:none"><p><strong><?php _e( "Notice:", 'twitter' ); ?></strong> <?php _e( "The plugin's settings have been changed. In order to save them please don't forget to click the 'Save Changes' button.", 'twitter' ); ?></p></div>
 			<div class="error" <?php if ( "" == $error ) echo "style=\"display:none\""; ?>><p><strong><?php echo $error; ?></strong></p></div>
 			<div>
-				<form method='post' action="admin.php?page=twitter.php" enctype="multipart/form-data">
+				<form method='post' action="admin.php?page=twitter.php" enctype="multipart/form-data" id="twttr_settings_form">
 					<table class="form-table">
 						<tr valign="top">
 							<th scope="row" colspan="2"><?php echo __( 'Settings for the button "Follow Me":', 'twitter' ); ?></th>
@@ -240,6 +247,17 @@ if ( ! function_exists( 'twttr_settings_page' ) ) {
 					</table>
 					<?php wp_nonce_field( plugin_basename( __FILE__ ), 'twttr_nonce_name' ); ?>
 				</form>
+				<br />
+				<div class="bws-plugin-reviews">
+					<div class="bws-plugin-reviews-rate">
+					<?php _e( 'If you enjoy our plugin, please give it 5 stars on WordPress', 'twitter' ); ?>:<br/>
+					<a href="http://wordpress.org/support/view/plugin-reviews/twitter-plugin" target="_blank" title="Twitter reviews"><?php _e( 'Rate the plugin', 'twitter' ); ?></a><br/>
+					</div>
+					<div class="bws-plugin-reviews-support">
+					<?php _e( 'If there is something wrong about it, please contact us', 'twitter' ); ?>:<br/>
+					<a href="http://support.bestwebsoft.com">http://support.bestwebsoft.com</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	<?php
@@ -356,9 +374,39 @@ if ( ! function_exists ( 'twttr_plugin_version_check' ) ) {
 /* Registering and apllying styles and scripts */
 if ( ! function_exists( 'twttr_admin_head' ) ) {
 	function twttr_admin_head() {
-		wp_enqueue_style( 'twttrStylesheet', plugins_url( 'css/style.css', __FILE__ ) );
+		global $wp_version;
+		if ( $wp_version < 3.8 )
+			wp_enqueue_style( 'twttrStylesheet', plugins_url( 'css/style_wp_before_3.8.css', __FILE__ ) );	
+		else
+			wp_enqueue_style( 'twttrStylesheet', plugins_url( 'css/style.css', __FILE__ ) );
+
 		if ( isset( $_GET['page'] ) && "bws_plugins" == $_GET['page'] )
 			wp_enqueue_script( 'bws_menu_script', plugins_url( 'js/bws_menu.js' , __FILE__ ) );
+	}
+}
+
+if ( ! function_exists('twttr_admin_js') ) {
+	function twttr_admin_js() {
+		if ( isset( $_GET['page'] ) && "twitter.php" == $_GET['page'] ) {
+			/* add notice about changing in the settings page */
+			?>
+			<script type="text/javascript">
+				(function($) {
+					$(document).ready( function() {
+						$( '#twttr_settings_form input' ).bind( "change click select", function() {
+							if ( $( this ).attr( 'type' ) != 'submit' ) {
+								$( '.updated.fade' ).css( 'display', 'none' );
+								$( '#twttr_settings_notice' ).css( 'display', 'block' );
+							};
+						});
+						$( '#twttr_settings_form select' ).bind( "change", function() {
+								$( '.updated.fade' ).css( 'display', 'none' );
+								$( '#twttr_settings_notice' ).css( 'display', 'block' );
+						});
+					});
+				})(jQuery);
+			</script>
+		<?php }
 	}
 }
 
@@ -374,9 +422,11 @@ add_action( 'admin_menu', 'twttr_add_pages' );
 add_action( 'init', 'twttr_plugin_init' );
 /* Call register settings function */
 add_action( 'init', 'twttr_settings' );
+add_action( 'admin_init', 'twttr_settings' );
 add_action( 'admin_init', 'twttr_plugin_version_check' );
 add_action( 'admin_enqueue_scripts', 'twttr_admin_head' );
 add_action( 'wp_enqueue_scripts', 'twttr_admin_head' );
+add_action( 'admin_head', 'twttr_admin_js' );
 
 add_shortcode( 'follow_me', 'twttr_follow_me' );
 

@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 3.0
-Tested up to: 3.7.1
-Stable tag: 2.31
+Tested up to: 3.8
+Stable tag: 2.32
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,14 +33,8 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pl
 
 = Translation =
 
-* Arabic (ar_AR) (thanks to Albayan Design Hani Aladoli)
 * Danish (da_DK) (thanks to <a href="mailto:admin@artikelforlaget.dk">Tom</a>, www.artikelforlaget.dk)
-* Dutch (nl_NL) (thanks to <a href="mailto:jan-willem.jwr.wilmsen@essent.nl">Jan-Willem</a>, www.directic.nl)
-* Hebrew (he_IL) (thanks to Sagive SEO)
-* Italian (it_IT) (thanks to Manuel)
 * Russian (ru_RU)
-* Slovak (sk_SK) (thanks to Branco Radenovich)
-* Spanish (es_ES)(thanks to <a href="mailto:mrjosefernando@gmail.com">Fernando De León</a>)
 * Ukrainian (uk)
 
 If you create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> for <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
@@ -87,6 +81,10 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 6. Shortcode settings.
 
 == Changelog ==
+
+= V2.32 - 26.12.2013 =
+* Update : BWS plugins section is updated.
+* Update : We updated all functionality for wordpress 3.8.
 
 = V2.31 - 07.11.2013 =
 * Bugfix : Bug related with displaying "Follow Me" button is fixed.
@@ -211,6 +209,9 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 * Ability to install Twitter icon with a link to the account page, including adjustment functionality settings via WordPress admin panel are added.
 
 == Upgrade Notice ==
+
+= V2.32 =
+BWS plugins section is updated. We updated all functionality for wordpress 3.8.
 
 = V2.31 =
 Bug related with displaying "Follow Me" button is fixed.
