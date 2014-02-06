@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://www.2checkout.com/checkout/purchase?sid=1430388&quantity=10&product_id=13
 Tags: tvit, twit, twet, tvet, tvitt, twitt, twett, tvett, tviter, twiter, tweter, twiter, follow button, twitter follow button, twitter share, twitter follow, twitter share button, button, connect, twitter connect, twiter conect, tweet, tweeter, tweetter 
 Requires at least: 3.0
-Tested up to: 3.8
-Stable tag: 2.32
+Tested up to: 3.8.1
+Stable tag: 2.33
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,7 +43,7 @@ If you create your own language pack or update the existing one, you can send <a
 
 1. Upload the folder `Twitter` to the directory `/wp-content/plugins/`.
 2. Activate the plugin via the 'Plugins' menu in your WordPress admin panel.
-3. You can adjust the necessary settings using your WordPress admin panel in "Settings" > "Twitter".
+3. You can adjust the necessary settings using your WordPress admin panel in "BWS Plugins" -> "Twitter".
 
 == Frequently Asked Questions ==
 
@@ -71,16 +71,28 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 
 2. After saving your settings you should refresh the web page, where the Twitter icon should be placed.
 
+= I have some problems with the plugin's work. What Information should I provide to receive proper support? =
+
+Please make sure that the problem hasn't been discussed yet on our forum (<a href="http://support.bestwebsoft.com" target="_blank">http://support.bestwebsoft.com</a>). If no, please provide the following data along with your problem's description:
+1. the link to the page where the problem occurs
+2. the name of the plugin and its version. If you are using a pro version - your order number.
+3. the version of your WordPress installation
+4. copy and paste into the message your system status report. Please read more here: <a href="http://bestwebsoft.com/wp-content/uploads/manual/wp_plugin/general/System_Status.pdf" target="_blank">System_Status.pdf</a>
+
 == Screenshots ==
 
-1. Settings to place the Twitter icon below the content.
-2. Display the Twitter icon below the content.
-3. Settings to place the Twitter icon above the content.
-4. Display the Twitter icon above the content.
-5. Display on the page.
-6. Shortcode settings.
+1. Twitter Settings page.
+2. Pasting [follow_me] shortcode into the content.
+3. Twitter "Like" button in the front-end.
+4. Default Twitter "Follow" button in the front-end.
+5. Custom Twitter "Follow" button in the front-end.
 
 == Changelog ==
+
+= V2.33 - 06.02.2014 =
+* Update : Screenshots are updated.
+* Update : BWS plugins section is updated.
+* Update : We updated all functionality for wordpress 3.8.1.
 
 = V2.32 - 26.12.2013 =
 * Update : BWS plugins section is updated.
@@ -209,6 +221,9 @@ In the WordPress admin panel go to "Settings", find the Twitter plugin settings 
 * Ability to install Twitter icon with a link to the account page, including adjustment functionality settings via WordPress admin panel are added.
 
 == Upgrade Notice ==
+
+= V2.33 =
+Screenshots are updated. BWS plugins section is updated. We updated all functionality for wordpress 3.8.1.
 
 = V2.32 =
 BWS plugins section is updated. We updated all functionality for wordpress 3.8.

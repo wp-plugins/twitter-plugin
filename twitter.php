@@ -4,13 +4,13 @@ Plugin Name: Twitter
 Plugin URI:  http://bestwebsoft.com/plugin/
 Description: Plugin to add a link to the page author to twitter.
 Author: BestWebSoft
-Version: 2.32
+Version: 2.33
 Author URI: http://bestwebsoft.com/
 License: GPLv2 or later
 */
 
 /*
-	@ Copyright 2013  BestWebSoft  ( http://support.bestwebsoft.com )
+	@ Copyright 2014  BestWebSoft  ( http://support.bestwebsoft.com )
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as
@@ -250,11 +250,11 @@ if ( ! function_exists( 'twttr_settings_page' ) ) {
 				<br />
 				<div class="bws-plugin-reviews">
 					<div class="bws-plugin-reviews-rate">
-					<?php _e( 'If you enjoy our plugin, please give it 5 stars on WordPress', 'twitter' ); ?>:<br/>
+					<?php _e( 'If you enjoy our plugin, please give it 5 stars on WordPress', 'twitter' ); ?>: 
 					<a href="http://wordpress.org/support/view/plugin-reviews/twitter-plugin" target="_blank" title="Twitter reviews"><?php _e( 'Rate the plugin', 'twitter' ); ?></a><br/>
 					</div>
 					<div class="bws-plugin-reviews-support">
-					<?php _e( 'If there is something wrong about it, please contact us', 'twitter' ); ?>:<br/>
+					<?php _e( 'If there is something wrong about it, please contact us', 'twitter' ); ?>: 
 					<a href="http://support.bestwebsoft.com">http://support.bestwebsoft.com</a>
 					</div>
 				</div>
@@ -351,7 +351,6 @@ if ( ! function_exists( 'twttr_links' ) ) {
 if ( ! function_exists( 'twttr_plugin_init' ) ) {
 	function twttr_plugin_init() {
 		load_plugin_textdomain( 'twitter', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-		load_plugin_textdomain( 'bestwebsoft', false, dirname( plugin_basename( __FILE__ ) ) . '/bws_menu/languages/' );
 	}
 }
 
@@ -379,9 +378,6 @@ if ( ! function_exists( 'twttr_admin_head' ) ) {
 			wp_enqueue_style( 'twttrStylesheet', plugins_url( 'css/style_wp_before_3.8.css', __FILE__ ) );	
 		else
 			wp_enqueue_style( 'twttrStylesheet', plugins_url( 'css/style.css', __FILE__ ) );
-
-		if ( isset( $_GET['page'] ) && "bws_plugins" == $_GET['page'] )
-			wp_enqueue_script( 'bws_menu_script', plugins_url( 'js/bws_menu.js' , __FILE__ ) );
 	}
 }
 
@@ -435,6 +431,7 @@ add_filter( 'the_content', "twttr_twit" );
 add_filter( 'plugin_action_links', 'twttr_action_links', 10, 2 );
 /* Additional links on the plugin page */
 add_filter( 'plugin_row_meta', 'twttr_links', 10, 2 );
+add_filter( 'widget_text', 'do_shortcode' );
 
 register_uninstall_hook( __FILE__, 'twttr_delete_options' );
 ?>
