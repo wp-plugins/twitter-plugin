@@ -97,7 +97,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<a hre
 = V2.35 - 11.04.2014 =
 * Update : We updated all functionality for wordpress 3.8.2.
 
-= V2.34 - 04.03.2014 =
+= V2.34 - 04.03.2014 = 
 * Budfix : Plugin optimization is done.
 * Update : Plugin tabs is added.
 
